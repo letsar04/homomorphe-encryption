@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HE_Proto — Plateforme de Chiffrement Homomorphe Cloud Banking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar Corporate -->
+    <header class="app-header">
+        <div class="header-container">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1>HE_Proto Cloud Banking</h1>
+                    <p class="brand-subtitle">Démonstrateur de Calculs Financiers sur Données Chiffrées (AWS Cloud & BCEAO)</p>
+                </div>
+            </div>
+            <div class="header-status">
+                <span class="status-badge" id="cloudStatusBadge">
+                    <span class="status-dot"></span> Serveur Cloud REST : Connecté
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Stepper Navigation -->
+        <nav class="stepper-nav">
+            <div class="step-item active" id="stepNavItem1">
+                <span class="step-number">1</span>
+                <span class="step-label">Importation des Données</span>
+            </div>
+            <div class="step-divider"></div>
+            <div class="step-item" id="stepNavItem2">
+                <span class="step-number">2</span>
+                <span class="step-label">Configuration Cryptographique</span>
+            </div>
+            <div class="step-divider"></div>
+            <div class="step-item" id="stepNavItem3">
+                <span class="step-number">3</span>
+                <span class="step-label">Traitement Cloud AWS</span>
+            </div>
+            <div class="step-divider"></div>
+            <div class="step-item" id="stepNavItem4">
+                <span class="step-number">4</span>
+                <span class="step-label">Résultats & Métriques</span>
+            </div>
+        </nav>
+
+        <!-- SECTION 1: Importation des Données -->
+        <section class="card step-section active" id="section1">
+            <div class="card-header">
+                <h2>Étape 1 : Chargement des Données Financières</h2>
+                <p>Uploadez votre fichier CSV de données bancaires ou générez un jeu de données synthétique adapté au contexte Mobile Money / Banque.</p>
+            </div>
+            <div class="card-body">
+                <div class="grid-2col">
+                    <!-- Dropzone -->
+                    <div class="dropzone" id="dropzone">
+                        <svg class="dropzone-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p class="dropzone-title">Glissez-déposez votre fichier CSV ici</p>
+                        <p class="dropzone-sub">ou cliquez pour parcourir vos fichiers</p>
+                        <input type="file" id="csvFileInput" accept=".csv" class="file-input">
+                    </div>
+
+                    <!-- Presets & Quick Load -->
+                    <div class="preset-box">
+                        <h3>Jeux de Données de Démonstration</h3>
+                        <p>Sélectionnez un cas d'usage financier pré-configuré :</p>
+                        <div class="button-group">
+                            <button class="btn btn-outline" id="btnLoadMicrocredit">
+                                📱 Profils Micro-Crédit Mobile Money (50 Clients)
+                            </button>
+                            <button class="btn btn-outline" id="btnLoadAgios">
+                                🏦 Soldes Journaliers Bancaires (30 Jours)
+                            </button>
+                            <button class="btn btn-outline" id="btnLoadTransactions">
+                                💳 100 Transactions Synthétiques (FCFA)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Preview Table -->
+                <div class="preview-container hidden" id="previewContainer">
+                    <div class="preview-header">
+                        <h3>Aperçu des Données en Clair (<span id="dataRowCount">0</span> lignes chargées)</h3>
+                        <span class="badge badge-info" id="dataSummaryBadge">Prêt pour chiffrement</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table" id="dataTable">
+                            <thead id="tableHead"></thead>
+                            <tbody id="tableBody"></tbody>
+                        </table>
+                    </div>
+                    <div class="action-footer">
+                        <button class="btn btn-primary" id="btnGoToStep2">
+                            Poursuivre vers la Configuration Cryptographique &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Configuration Cryptographique -->
+        <section class="card step-section hidden" id="section2">
+            <div class="card-header">
+                <h2>Étape 2 : Choix du Schéma Homomorphe & Opération</h2>
+                <p>Configurez les paramètres cryptographiques pour le traitement des données sur le Cloud distant.</p>
+            </div>
+            <div class="card-body">
+                <div class="grid-2col">
+                    <!-- Scheme Selector -->
+                    <div class="form-group">
+                        <label class="form-label">Sélectionner le Schéma de Chiffrement Homomorphe :</label>
+                        <div class="radio-card-group">
+                            <label class="radio-card">
+                                <input type="radio" name="scheme" value="paillier" checked>
+                                <div class="radio-card-content">
+                                    <div class="radio-title">Paillier (PHE)</div>
+                                    <div class="radio-desc">Chiffrement Homomorphe Partiel. Idéal pour les additions homomorphes et multiplications par scalaires. Clé 2048-bit.</div>
+                                </div>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="scheme" value="bfv">
+                                <div class="radio-card-content">
+                                    <div class="radio-title">BFV (Pyfhel / SEAL)</div>
+                                    <div class="radio-desc">Chiffrement Homomorphe Somme Toute (FHE). Permet des opérations modulaires complexes. Degré 8192.</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Operation Selector -->
+                    <div class="form-group">
+                        <label class="form-label">Opération Financière à Exécuter :</label>
+                        <select class="form-select" id="selectOperation">
+                            <option value="microcredit">Score de Micro-Crédit Mobile Money (Formule Pondérée)</option>
+                            <option value="agios">Calcul d'Agios & Intérêts sur Soldes Journaliers</option>
+                            <option value="somme">Somme Homomorphe Totale des Montants (FCFA)</option>
+                        </select>
+                        <div class="info-callout" id="operationCallout">
+                            <strong>Formule du Score :</strong> Score = (5 &times; Vol_Tx) + (50 000 &times; Régularité) - (20 000 &times; Retards).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-footer">
+                    <button class="btn btn-secondary" id="btnBackToStep1">&larr; Retour</button>
+                    <button class="btn btn-primary" id="btnStartEncryption">
+                        Chiffrer et Transmettre au Cloud AWS &rarr;
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Processing & Monitoring -->
+        <section class="card step-section hidden" id="section3">
+            <div class="card-header">
+                <h2>Étape 3 : Traitement en Cours sur le Cloud AWS</h2>
+                <p>Suivi en temps réel du chiffrement local, du transfert réseau REST et du calcul homomorphe Cloud.</p>
+            </div>
+            <div class="card-body text-center">
+                <div class="spinner-container">
+                    <div class="spinner"></div>
+                    <h3 class="processing-title" id="processingStatusText">Chiffrement des données en local...</h3>
+                    <p class="processing-desc">Génération des paires de clés et chiffrement des payloads financiers en cours.</p>
+                </div>
+
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar" style="width: 25%;"></div>
+                </div>
+
+                <!-- Pipeline Status Steps -->
+                <div class="pipeline-grid">
+                    <div class="pipeline-box" id="pipeStep1">
+                        <div class="pipe-icon">🔒</div>
+                        <div class="pipe-title">1. Chiffrement Client</div>
+                        <div class="pipe-status" id="pipeStatus1">En cours...</div>
+                    </div>
+                    <div class="pipeline-box" id="pipeStep2">
+                        <div class="pipe-icon">🌐</div>
+                        <div class="pipe-title">2. Transfert HTTP AWS</div>
+                        <div class="pipe-status" id="pipeStatus2">En attente</div>
+                    </div>
+                    <div class="pipeline-box" id="pipeStep3">
+                        <div class="pipe-icon">⚙️</div>
+                        <div class="pipe-title">3. Calcul Homomorphe</div>
+                        <div class="pipe-status" id="pipeStatus3">En attente</div>
+                    </div>
+                    <div class="pipeline-box" id="pipeStep4">
+                        <div class="pipe-icon">🔑</div>
+                        <div class="pipe-title">4. Déchiffrement Client</div>
+                        <div class="pipe-status" id="pipeStatus4">En attente</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Résultats & KPIs -->
+        <section class="card step-section hidden" id="section4">
+            <div class="card-header flex-between">
+                <div>
+                    <h2>Étape 4 : Résultats des Calculs & Métriques de Performance</h2>
+                    <p>Résultats déchiffrés, décisions financières et évaluation des performances cryptographiques sur AWS Cloud.</p>
+                </div>
+                <button class="btn btn-outline" id="btnRestart">🔄 Nouvelle Expérience</button>
+            </div>
+            <div class="card-body">
+
+                <!-- KPI Metrics Cards -->
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-label">Temps de Chiffrement</div>
+                        <div class="kpi-value" id="kpiEncTime">0.00 ms</div>
+                        <div class="kpi-sub">Local Client</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Latence Réseau HTTP</div>
+                        <div class="kpi-value" id="kpiNetTime">0.00 ms</div>
+                        <div class="kpi-sub">Aller-Retour AWS EC2</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Temps Calcul Cloud</div>
+                        <div class="kpi-value" id="kpiCloudTime">0.00 ms</div>
+                        <div class="kpi-sub">Exécution Homomorphe</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Taille Payload Chiffré</div>
+                        <div class="kpi-value" id="kpiPayloadSize">0 Ko</div>
+                        <div class="kpi-sub" id="kpiExpansionRatio">Expansion : 0x</div>
+                    </div>
+                </div>
+
+                <!-- Results Table -->
+                <div class="results-container">
+                    <h3>Tableau des Résultats Financiers Déchiffrés</h3>
+                    <div class="table-responsive">
+                        <table class="data-table" id="resultsTable">
+                            <thead>
+                                <tr>
+                                    <th>Identifiant Client</th>
+                                    <th>Valeurs en Clair (Entrée)</th>
+                                    <th>Résultat Homomorphe (Déchiffré)</th>
+                                    <th>Résultat en Clair (Référence)</th>
+                                    <th>Décision / Statut</th>
+                                    <th>Exactitude</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultsTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="footer-container">
+            <p>HE_Proto &copy; 2026 — Prototype de Recherche en Chiffrement Homomorphe Appliqué à la Banque Cloud et Mobile Money.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

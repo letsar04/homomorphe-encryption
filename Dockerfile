@@ -19,6 +19,7 @@ COPY schemes/ schemes/
 COPY cloud_sim/ cloud_sim/
 COPY data/ data/
 COPY benchmarks/ benchmarks/
+COPY web_ui/ web_ui/
 
 # Exposition du port REST API
 EXPOSE 8000

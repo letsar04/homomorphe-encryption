@@ -39,9 +39,28 @@ class CloudHEHTTPRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def servir_fichier_statique(self, path_relatif, content_type):
+        path_abs = os.path.join(ROOT_DIR, path_relatif)
+        if os.path.exists(path_abs):
+            with open(path_abs, "rb") as f:
+                content = f.read()
+            self.send_response(200)
+            self.send_header("Content-Type", content_type)
+            self.send_header("Content-Length", str(len(content)))
+            self.end_headers()
+            self.wfile.write(content)
+        else:
+            self._send_json_response({"error": f"Fichier {path_relatif} introuvable"}, status_code=404)
+
     def do_GET(self):
         if self.path == "/health":
             self._send_json_response({"status": "ok", "service": "Cloud HE REST Server"})
+        elif self.path == "/" or self.path == "/index.html":
+            self.servir_fichier_statique("web_ui/index.html", "text/html; charset=utf-8")
+        elif self.path == "/style.css":
+            self.servir_fichier_statique("web_ui/style.css", "text/css")
+        elif self.path == "/app.js":
+            self.servir_fichier_statique("web_ui/app.js", "application/javascript")
         else:
             self._send_json_response({"error": "Endpoint introuvable"}, status_code=404)
 
