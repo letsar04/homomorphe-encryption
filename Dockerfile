@@ -13,10 +13,12 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copie du code source du serveur
+# Copie du code source du serveur et des benchmarks
 COPY config.py .
 COPY schemes/ schemes/
 COPY cloud_sim/ cloud_sim/
+COPY data/ data/
+COPY benchmarks/ benchmarks/
 
 # Exposition du port REST API
 EXPOSE 8000
