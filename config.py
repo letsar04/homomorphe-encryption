@@ -17,10 +17,12 @@ MONTANT_MAX = 10_000_000        # FCFA  de précision en HE (point 2)
 NB_COMPTES = 200                # comptes/clients simulés (point 4)
 
 # --- Paillier (point 5, Partie II) ---
-PAILLIER_KEY_SIZE = 2048        # bits, standard actuellement recommandé
+PAILLIER_KEY_SIZE = 2048             # bits, standard historique de transition (112 bits de sécurité)
+PAILLIER_KEY_SIZE_128BIT = 3072      # bits, standard recommandé NIST (128 bits de sécurité classique)
 
 # --- BFV (point 6, Partie II) ---
 BFV_POLY_MODULUS_DEGREE = 8192
+BFV_SECURITY_LEVEL = 128             # bits, niveau de sécurité Homomorphic Encryption Standard (RLWE)
 
 # plain_modulus calibré selon l'exemple de la note technique :
 # t doit être > somme maximale théorique (NB_TRANSACTIONS * MONTANT_MAX).

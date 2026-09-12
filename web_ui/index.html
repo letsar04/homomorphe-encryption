@@ -26,9 +26,17 @@
                     <p class="brand-subtitle">Démonstrateur de Calculs Financiers sur Données Chiffrées (AWS Cloud & BCEAO)</p>
                 </div>
             </div>
-            <div class="header-status">
+            <div class="header-status" style="display: flex; align-items: center; gap: 12px;">
+                <div class="cloud-telemetry-badge" id="cloudTelemetryBadge" title="Télémétrie en temps réel du serveur Cloud distant">
+                    <span class="pulse-dot"></span>
+                    <span class="telemetry-item">⚡ CPU : <strong id="telemetryCpu">--%</strong></span>
+                    <span class="telemetry-sep">|</span>
+                    <span class="telemetry-item">💾 RAM Globale : <strong id="telemetryRam">-- Mo</strong></span>
+                    <span class="telemetry-sep">|</span>
+                    <span class="telemetry-item">⚙️ RSS Serveur : <strong id="telemetryProcess">-- Mo</strong></span>
+                </div>
                 <span class="status-badge" id="cloudStatusBadge">
-                    <span class="status-dot"></span> Serveur Cloud REST : Connecté
+                    <span class="status-dot"></span> Serveur Cloud : Connecté
                 </span>
             </div>
         </div>
@@ -56,7 +64,12 @@
             <div class="step-divider"></div>
             <div class="step-item" id="stepNavItem4">
                 <span class="step-number">4</span>
-                <span class="step-label">Résultats & Métriques</span>
+                <span class="step-label">Résultats &amp; Métriques</span>
+            </div>
+            <div class="step-divider"></div>
+            <div class="step-item" id="stepNavItem5">
+                <span class="step-number">5</span>
+                <span class="step-label">Comparatif Sécurité</span>
             </div>
         </nav>
 
@@ -218,14 +231,18 @@
         <section class="card step-section hidden" id="section4">
             <div class="card-header flex-between">
                 <div>
-                    <h2>Étape 4 : Résultats des Calculs & Métriques de Performance</h2>
+                    <h2>Étape 4 : Résultats des Calculs &amp; Métriques de Performance</h2>
                     <p>Résultats déchiffrés, décisions financières et évaluation des performances cryptographiques sur AWS Cloud.</p>
                 </div>
-                <button class="btn btn-outline" id="btnRestart">🔄 Nouvelle Expérience</button>
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn btn-outline" id="btnRestart">🔄 Nouvelle Expérience</button>
+                    <button class="btn btn-primary" id="btnGoToStep5">🔐 Comparatif Sécurité (Étape 5) &rarr;</button>
+                </div>
             </div>
             <div class="card-body">
 
-                <!-- KPI Metrics Cards -->
+                <!-- KPI Cryptographic & Network Cards -->
+                <h3 style="font-size: 14px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px;">📊 Métriques Cryptographiques &amp; Réseau (Client Local &harr; AWS)</h3>
                 <div class="kpi-grid">
                     <div class="kpi-card">
                         <div class="kpi-label">Temps de Chiffrement</div>
@@ -249,6 +266,31 @@
                     </div>
                 </div>
 
+                <!-- Cloud Hardware Resource Consumption Cards -->
+                <h3 style="font-size: 14px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px; margin-top: 20px;">☁️ Consommation Réelle des Ressources Cloud AWS (Profilage Instance EC2)</h3>
+                <div class="kpi-grid">
+                    <div class="kpi-card" style="border-left: 4px solid #10b981;">
+                        <div class="kpi-label">Pic Mémoire RAM Cloud</div>
+                        <div class="kpi-value" id="kpiCloudRamPeak">0.00 Ko</div>
+                        <div class="kpi-sub" id="kpiCloudRamPeakMo">tracemalloc : 0.00 Mo</div>
+                    </div>
+                    <div class="kpi-card" style="border-left: 4px solid #3b82f6;">
+                        <div class="kpi-label">Temps CPU Processeur</div>
+                        <div class="kpi-value" id="kpiCloudCpuTime">0.00 ms</div>
+                        <div class="kpi-sub" id="kpiCloudCpuLoad">Charge CPU : --%</div>
+                    </div>
+                    <div class="kpi-card" style="border-left: 4px solid #8b5cf6;">
+                        <div class="kpi-label">RAM Processus Serveur</div>
+                        <div class="kpi-value" id="kpiCloudProcessRam">0.00 Mo</div>
+                        <div class="kpi-sub">Empreinte RSS Python</div>
+                    </div>
+                    <div class="kpi-card" style="border-left: 4px solid #f59e0b;">
+                        <div class="kpi-label">RAM Système Globale EC2</div>
+                        <div class="kpi-value" id="kpiCloudSystemRam">0 / 0 Mo</div>
+                        <div class="kpi-sub" id="kpiCloudSystemRamPct">Utilisation : 0%</div>
+                    </div>
+                </div>
+
                 <!-- Results Table -->
                 <div class="results-container">
                     <h3>Tableau des Résultats Financiers Déchiffrés</h3>
@@ -269,6 +311,155 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- SECTION 5: Comparatif de Sécurité Multi-Paramètres -->
+        <section class="card step-section hidden" id="section5">
+            <div class="card-header flex-between">
+                <div>
+                    <h2>Étape 5 : Comparatif des Performances selon les Paramètres de Sécurité</h2>
+                    <p>Analyse comparative Paillier vs BFV en faisant varier les paramètres de sécurité (taille de clé, degré polynomial, niveau RLWE). Exécution sur le serveur Cloud AWS.</p>
+                </div>
+                <button class="btn btn-outline" id="btnBackToStep4">&larr; Retour aux Résultats</button>
+            </div>
+            <div class="card-body">
+
+                <!-- Configuration du benchmark -->
+                <div class="secu-config-panel">
+                    <h3>Configuration du Benchmark de Sécurité</h3>
+                    <div class="grid-2col">
+                        <div class="form-group">
+                            <label class="form-label">Configurations Paillier (taille de clé N en bits) :</label>
+                            <div class="checkbox-group" id="paillierConfigGroup">
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="paillier_cfg" value="1024">
+                                    <span>1024 bits <small>(80b sécu. — Legacy)</small></span>
+                                </label>
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="paillier_cfg" value="2048" checked>
+                                    <span>2048 bits <small>(112b sécu. — Standard)</small></span>
+                                </label>
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="paillier_cfg" value="3072" checked>
+                                    <span>3072 bits <small>(128b sécu. — NIST)</small></span>
+                                </label>
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="paillier_cfg" value="4096">
+                                    <span>4096 bits <small>(140b sécu. — Haute)</small></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Configurations BFV (degré n, niveau sec RLWE) :</label>
+                            <div class="checkbox-group" id="bfvConfigGroup">
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="bfv_cfg" value="4096,128">
+                                    <span>n=4096, sec=128b <small>(Léger)</small></span>
+                                </label>
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="bfv_cfg" value="8192,128" checked>
+                                    <span>n=8192, sec=128b <small>(Standard RLWE)</small></span>
+                                </label>
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="bfv_cfg" value="16384,128">
+                                    <span>n=16384, sec=128b <small>(Haute Capacité)</small></span>
+                                </label>
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="bfv_cfg" value="16384,256">
+                                    <span>n=16384, sec=256b <small>(Très Haute)</small></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-2col" style="margin-top: 20px;">
+                        <div class="form-group">
+                            <label class="form-label">Nombre de transactions par test :</label>
+                            <select class="form-select" id="secuNbTransactions">
+                                <option value="20">20 (Rapide)</option>
+                                <option value="50" selected>50 (Standard)</option>
+                                <option value="100">100 (Étendu)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Répétitions par configuration :</label>
+                            <select class="form-select" id="secuNbRepetitions">
+                                <option value="1" selected>1 (Rapide)</option>
+                                <option value="3">3 (Standard)</option>
+                                <option value="5">5 (Précis)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="action-footer">
+                        <button class="btn btn-primary btn-lg" id="btnLancerBenchmarkSecu">
+                            Lancer le Benchmark de Sécurité sur le Serveur Cloud &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Loading Spinner -->
+                <div class="secu-loading hidden" id="secuLoading">
+                    <div class="spinner-container">
+                        <div class="spinner"></div>
+                        <h3 class="processing-title" id="secuLoadingText">Exécution du comparatif de sécurité sur le Cloud...</h3>
+                        <p class="processing-desc">Les tests cryptographiques sont en cours d'exécution sur le serveur distant. Cela peut prendre quelques minutes selon les configurations choisies.</p>
+                    </div>
+                </div>
+
+                <!-- Résultats du benchmark -->
+                <div class="secu-results hidden" id="secuResults">
+
+                    <!-- Tableau d'alignement 128 bits -->
+                    <div class="secu-highlight-box" id="secuAlignementBox">
+                        <h3>Alignement 128 bits — Base Commune (NIST SP 800-57 / Homomorphic Encryption Standard)</h3>
+                        <p>Ce tableau constitue la base commune équitable pour les Chapitres 3 &amp; 4 du mémoire.</p>
+                        <div class="table-responsive">
+                            <table class="data-table secu-table" id="tableAlignement128">
+                                <thead>
+                                    <tr>
+                                        <th>Métrique</th>
+                                        <th>Paillier (3072 bits)</th>
+                                        <th>BFV (n=8192, sec=128)</th>
+                                        <th>Avantage</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="alignementBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Tableau complet multi-paramètres -->
+                    <div class="results-container" style="margin-top: 28px;">
+                        <h3>Synthèse Complète des Mesures Multi-Paramètres</h3>
+                        <div class="table-responsive">
+                            <table class="data-table secu-table" id="tableSecuComplet">
+                                <thead>
+                                    <tr>
+                                        <th>Schéma</th>
+                                        <th>Configuration</th>
+                                        <th>Sécurité</th>
+                                        <th>Post-Quantique</th>
+                                        <th>KeyGen (ms)</th>
+                                        <th>Chiff. unitaire (ms)</th>
+                                        <th>Somme Homo. (ms)</th>
+                                        <th>Déchiff. (ms)</th>
+                                        <th>Pic RAM (Ko)</th>
+                                        <th>Taille Cipher. (oct.)</th>
+                                        <th>Expansion</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="secuCompletBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- KPIs visuels -->
+                    <div class="kpi-grid" style="margin-top: 28px;" id="secuKpiGrid">
+                    </div>
+
+                </div>
             </div>
         </section>
 

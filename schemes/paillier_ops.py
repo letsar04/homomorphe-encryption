@@ -15,6 +15,7 @@ from config import PAILLIER_KEY_SIZE
 
 class PaillierScheme:
     def __init__(self, key_size=PAILLIER_KEY_SIZE):
+        self.key_size = key_size
         self.public_key, self.private_key = paillier.generate_paillier_keypair(
             n_length=key_size
         )

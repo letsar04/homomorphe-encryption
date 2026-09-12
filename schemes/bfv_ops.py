@@ -17,14 +17,16 @@ from config import BFV_POLY_MODULUS_DEGREE, BFV_PLAIN_MODULUS_BITS
 
 class BFVScheme:
     def __init__(self, poly_modulus_degree=BFV_POLY_MODULUS_DEGREE,
-                 plain_modulus_bits=BFV_PLAIN_MODULUS_BITS):
+                 plain_modulus_bits=BFV_PLAIN_MODULUS_BITS,
+                 sec=128):
         self.he = Pyfhel()
-        # Génère automatiquement un plain_modulus premier valide respectant
-        # t ≡ 1 mod 2n (cf. note technique, section 1.2). Le nombre de bits
-        # est calculé dans config.py à partir de la plage de valeurs retenue.
-        self.he.contextGen(scheme="BFV", n=poly_modulus_degree, t_bits=plain_modulus_bits)
-        self.he.keyGen()
+        self.sec = sec
         self.poly_modulus_degree = poly_modulus_degree
+        self.plain_modulus_bits = plain_modulus_bits
+        # Génère automatiquement un plain_modulus premier valide respectant
+        # t ≡ 1 mod 2n (cf. note technique, section 1.2).
+        self.he.contextGen(scheme="BFV", n=poly_modulus_degree, t_bits=plain_modulus_bits, sec=sec)
+        self.he.keyGen()
 
     def chiffrer(self, valeurs):
         """Chiffre une liste d'entiers. Retourne une liste de PyCtxt."""
