@@ -105,10 +105,11 @@ document.addEventListener("DOMContentLoaded", () => {
     btnLoadAgios.addEventListener("click", () => loadPresetAgios());
     btnLoadTransactions.addEventListener("click", () => loadPresetTransactions());
 
-    function renderTable(headers, rows) {
+    function renderTable(headers, rows, totalCount) {
         tableHead.innerHTML = `<tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr>`;
         tableBody.innerHTML = rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
-        dataRowCount.textContent = rows.length;
+        const count = totalCount !== undefined ? totalCount : rows.length;
+        dataRowCount.textContent = `${count.toLocaleString('fr-FR')} lignes chargées (Aperçu des 20 premières)`;
         previewContainer.classList.remove("hidden");
     }
 
@@ -179,11 +180,24 @@ document.addEventListener("DOMContentLoaded", () => {
         reader.onload = (e) => {
             const text = e.target.result;
             const lines = text.split("\n").map(l => l.trim()).filter(l => l.length > 0);
-            if (lines.length > 0) {
+            if (lines.length > 1) {
                 const headers = lines[0].split(",").map(h => h.trim());
-                const rows = lines.slice(1, 21).map(l => l.split(",").map(c => c.trim()));
-                loadedData = { type: "custom", headers, rows };
-                renderTable(headers, rows);
+                const allRows = lines.slice(1).map(l => l.split(",").map(c => c.trim()));
+                const previewRows = allRows.slice(0, 20);
+                
+                // Détecter automatiquement le type d'opération selon les en-têtes
+                const hLower = headers.map(h => h.toLowerCase()).join(" ");
+                let detectedType = "somme";
+                if (hLower.includes("score") || hLower.includes("regularite") || hLower.includes("retard") || hLower.includes("microcredit")) {
+                    detectedType = "microcredit";
+                } else if (hLower.includes("agios") || hLower.includes("solde_moyen") || hLower.includes("taux")) {
+                    detectedType = "agios";
+                }
+                
+                loadedData = { type: detectedType, headers, rows: allRows };
+                selectOperation.value = detectedType;
+                selectOperation.dispatchEvent(new Event('change'));
+                renderTable(headers, previewRows, allRows.length);
             }
         };
         reader.readAsText(file);

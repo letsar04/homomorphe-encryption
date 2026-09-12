@@ -1,0 +1,1001 @@
+Client_ID,Nom_Client,Ville,Secteur_Activite,Volume_Transactions_FCFA,Note_Regularite_10,Jours_Retard_Moyen,Score_Calcul_Clair,Decision_Eligibilite
+CLI-20001,Aïssatou Gueye,San-Pédro,Services Numériques,3265000,7,1,16655000,ACCORDÉ
+CLI-20002,Seydou Gueye,Dakar,Artisanat,2180000,9,0,11350000,ACCORDÉ
+CLI-20003,Aminata Sanogo,Dakar,Commerce Général,297000,4,10,1485000,REFUSÉ
+CLI-20004,Kouassi Kouadio,Cotonou,Transport / Moto-Taxi,658000,10,3,3730000,ACCORDÉ
+CLI-20005,Khadija Sylla,San-Pédro,Restauration / Maquis,80000,2,28,-60000,REFUSÉ
+CLI-20006,Bintou Fofana,Bamako,Commerce Général,321000,3,14,1475000,REFUSÉ
+CLI-20007,Fatou Barry,Bobo-Dioulasso,Transport / Moto-Taxi,651000,9,1,3685000,ACCORDÉ
+CLI-20008,Adama Traoré,Dakar,Artisanat,259000,3,29,865000,REFUSÉ
+CLI-20009,Jean-Baptiste Sanogo,Saint-Louis,Transport / Moto-Taxi,3451000,7,0,17605000,ACCORDÉ
+CLI-20010,Salif Touré,Cotonou,BTP / Électricité,194000,2,27,530000,REFUSÉ
+CLI-20011,Mamadou Fofana,Bobo-Dioulasso,Services Numériques,1234000,10,0,6670000,ACCORDÉ
+CLI-20012,Salif Diallo,Cotonou,Restauration / Maquis,319000,3,25,1245000,REFUSÉ
+CLI-20013,Clarisse Koffi,San-Pédro,Restauration / Maquis,2081000,10,1,10885000,ACCORDÉ
+CLI-20014,Hawa Sow,Yamoussoukro,Salarié PME,278000,7,3,1680000,REFUSÉ
+CLI-20015,Mariam Diallo,Yamoussoukro,Services Numériques,481000,5,7,2515000,ACCORDÉ
+CLI-20016,Nafi Ba,San-Pédro,Commerce Général,180000,3,10,850000,REFUSÉ
+CLI-20017,Jean-Baptiste Kane,Dakar,BTP / Électricité,437000,7,7,2395000,REFUSÉ
+CLI-20018,Aïssatou Ndiaye,Ouagadougou,Restauration / Maquis,149000,4,14,665000,REFUSÉ
+CLI-20019,Oumar Sangaré,Lomé,Transport / Moto-Taxi,1350000,8,2,7110000,ACCORDÉ
+CLI-20020,Ibrahim Coulibaly,Dakar,Agriculture / Vivrier,766000,4,10,3830000,ACCORDÉ
+CLI-20021,Fatou Camara,Bobo-Dioulasso,BTP / Électricité,2909000,9,3,14935000,ACCORDÉ
+CLI-20022,Aminata Soro,Niamey,Restauration / Maquis,2918000,8,0,14990000,ACCORDÉ
+CLI-20023,Yao Bamba,Saint-Louis,Salarié PME,1956000,10,1,10260000,ACCORDÉ
+CLI-20024,Seydou Coulibaly,Cotonou,Salarié PME,262000,5,8,1400000,REFUSÉ
+CLI-20025,Koffi Coulibaly,Cotonou,BTP / Électricité,522000,5,10,2660000,ACCORDÉ
+CLI-20026,Mariam Ouédraogo,Bouaké,Restauration / Maquis,229000,3,13,1035000,REFUSÉ
+CLI-20027,Bintou Bamba,Niamey,Transport / Moto-Taxi,640000,6,8,3340000,ACCORDÉ
+CLI-20028,Mariam Fofana,Bobo-Dioulasso,Artisanat,2915000,8,0,14975000,ACCORDÉ
+CLI-20029,Sékou Kouadio,Saint-Louis,Transport / Moto-Taxi,2097000,8,1,10865000,ACCORDÉ
+CLI-20030,Boubacar Sangaré,Bouaké,Artisanat,142000,4,23,450000,REFUSÉ
+CLI-20031,Ibrahim Sylla,Bouaké,BTP / Électricité,2857000,7,3,14575000,ACCORDÉ
+CLI-20032,Awa Gueye,Abidjan,Artisanat,1566000,10,0,8330000,ACCORDÉ
+CLI-20033,Seydou Sangaré,Lomé,BTP / Électricité,2850000,9,2,14660000,ACCORDÉ
+CLI-20034,Amadou Bamba,Cotonou,Agriculture / Vivrier,154000,2,17,530000,REFUSÉ
+CLI-20035,Aïssatou Sow,San-Pédro,Salarié PME,828000,10,2,4600000,ACCORDÉ
+CLI-20036,Seydou Sylla,Ouagadougou,Artisanat,603000,7,8,3205000,ACCORDÉ
+CLI-20037,Tidiane Diallo,Ouagadougou,Agriculture / Vivrier,1814000,9,2,9480000,ACCORDÉ
+CLI-20038,Djeneba Kouadio,Lomé,Services Numériques,240000,4,21,980000,REFUSÉ
+CLI-20039,Aminata Cissé,Ouagadougou,Commerce Général,513000,4,5,2665000,ACCORDÉ
+CLI-20040,Aminata Sanogo,Dakar,Agriculture / Vivrier,2484000,7,0,12770000,ACCORDÉ
+CLI-20041,Hawa Sanogo,Dakar,Agriculture / Vivrier,1151000,7,3,6045000,ACCORDÉ
+CLI-20042,Cheikh Ouédraogo,San-Pédro,Transport / Moto-Taxi,3127000,8,1,16015000,ACCORDÉ
+CLI-20043,Yao Cissé,Abidjan,Commerce Général,590000,7,9,3120000,ACCORDÉ
+CLI-20044,Tidiane Fall,Saint-Louis,Restauration / Maquis,3426000,8,3,17470000,ACCORDÉ
+CLI-20045,Adama Sangaré,Saint-Louis,Services Numériques,574000,6,9,2990000,ACCORDÉ
+CLI-20046,Salif Ouédraogo,Bouaké,Agriculture / Vivrier,2228000,9,1,11570000,ACCORDÉ
+CLI-20047,Cheikh Traoré,Saint-Louis,Commerce Général,121000,3,17,415000,REFUSÉ
+CLI-20048,Bintou Fall,San-Pédro,Commerce Général,300000,3,8,1490000,REFUSÉ
+CLI-20049,Hawa Bamba,Bobo-Dioulasso,Restauration / Maquis,530000,9,1,3080000,ACCORDÉ
+CLI-20050,Nafi Fall,Niamey,Services Numériques,3498000,10,3,17930000,ACCORDÉ
+CLI-20051,Oumar Kouadio,Niamey,Agriculture / Vivrier,791000,6,6,4135000,ACCORDÉ
+CLI-20052,Adama Sangaré,Niamey,Restauration / Maquis,787000,8,1,4315000,ACCORDÉ
+CLI-20053,Cheikh Coulibaly,Bobo-Dioulasso,Salarié PME,765000,5,7,3935000,ACCORDÉ
+CLI-20054,Amadou Diop,Saint-Louis,Commerce Général,928000,9,2,5050000,ACCORDÉ
+CLI-20055,Ibrahim Gueye,San-Pédro,Salarié PME,878000,8,0,4790000,ACCORDÉ
+CLI-20056,Bintou Ndiaye,Niamey,BTP / Électricité,2590000,9,3,13340000,ACCORDÉ
+CLI-20057,Djeneba Koné,Dakar,BTP / Électricité,126000,1,16,360000,REFUSÉ
+CLI-20058,Hawa Sanogo,Saint-Louis,Agriculture / Vivrier,451000,6,8,2395000,REFUSÉ
+CLI-20059,Clarisse Traoré,San-Pédro,Agriculture / Vivrier,2357000,8,0,12185000,ACCORDÉ
+CLI-20060,Mamadou Fofana,Saint-Louis,Agriculture / Vivrier,468000,7,8,2530000,ACCORDÉ
+CLI-20061,Moussa Touré,Ouagadougou,BTP / Électricité,294000,4,6,1550000,REFUSÉ
+CLI-20062,Bintou Sylla,Bamako,Restauration / Maquis,718000,8,0,3990000,ACCORDÉ
+CLI-20063,Oumar Sylla,Cotonou,Services Numériques,1658000,7,3,8580000,ACCORDÉ
+CLI-20064,Boubacar Ouédraogo,Abidjan,Commerce Général,748000,5,7,3850000,ACCORDÉ
+CLI-20065,Hawa Diallo,Ouagadougou,Transport / Moto-Taxi,604000,4,2,3180000,ACCORDÉ
+CLI-20066,Aïssatou Sylla,San-Pédro,Artisanat,362000,5,9,1880000,REFUSÉ
+CLI-20067,Oumar Sow,Bouaké,BTP / Électricité,272000,7,7,1570000,REFUSÉ
+CLI-20068,Sékou Diop,Abidjan,Restauration / Maquis,708000,6,10,3640000,ACCORDÉ
+CLI-20069,Djeneba Camara,Bobo-Dioulasso,Transport / Moto-Taxi,1958000,9,3,10180000,ACCORDÉ
+CLI-20070,Mariam Barry,Dakar,Artisanat,721000,6,6,3785000,ACCORDÉ
+CLI-20071,Salif Ba,Abidjan,Salarié PME,780000,7,4,4170000,ACCORDÉ
+CLI-20072,Fanta Traoré,Bobo-Dioulasso,BTP / Électricité,765000,10,1,4305000,ACCORDÉ
+CLI-20073,Yao Kane,Saint-Louis,Salarié PME,1687000,9,3,8825000,ACCORDÉ
+CLI-20074,Adama Sow,Dakar,Agriculture / Vivrier,319000,4,4,1715000,REFUSÉ
+CLI-20075,Aminata Koné,Dakar,Transport / Moto-Taxi,353000,4,8,1805000,REFUSÉ
+CLI-20076,Moussa Camara,Abidjan,Restauration / Maquis,3041000,7,0,15555000,ACCORDÉ
+CLI-20077,Abdoulaye Ndiaye,Dakar,Salarié PME,313000,6,10,1665000,REFUSÉ
+CLI-20078,Sékou Bamba,San-Pédro,BTP / Électricité,3087000,9,0,15885000,ACCORDÉ
+CLI-20079,Sékou Diallo,Dakar,Restauration / Maquis,322000,1,11,1440000,REFUSÉ
+CLI-20080,Sékou Ouédraogo,Bamako,Services Numériques,3255000,8,1,16655000,ACCORDÉ
+CLI-20081,Salif Sangaré,San-Pédro,Services Numériques,3178000,9,3,16280000,ACCORDÉ
+CLI-20082,Djeneba Kane,Dakar,Services Numériques,1256000,10,2,6740000,ACCORDÉ
+CLI-20083,Moussa Cissé,Cotonou,Salarié PME,338000,3,19,1460000,REFUSÉ
+CLI-20084,Nafi Sylla,San-Pédro,Services Numériques,1509000,8,3,7885000,ACCORDÉ
+CLI-20085,Hawa Fall,Cotonou,Restauration / Maquis,284000,4,8,1460000,REFUSÉ
+CLI-20086,Sékou Koné,Bobo-Dioulasso,Restauration / Maquis,1066000,9,0,5780000,ACCORDÉ
+CLI-20087,Cheikh Ouédraogo,Cotonou,Transport / Moto-Taxi,3392000,9,1,17390000,ACCORDÉ
+CLI-20088,Awa Koné,Cotonou,Salarié PME,1611000,9,1,8485000,ACCORDÉ
+CLI-20089,Oumar Kouadio,Dakar,Restauration / Maquis,477000,4,7,2445000,REFUSÉ
+CLI-20090,Boubacar Camara,Bouaké,Artisanat,99000,3,9,465000,REFUSÉ
+CLI-20091,Sékou Koffi,Dakar,Services Numériques,600000,6,8,3140000,ACCORDÉ
+CLI-20092,Nafi Coulibaly,San-Pédro,Transport / Moto-Taxi,261000,7,2,1615000,REFUSÉ
+CLI-20093,Cheikh Soro,Cotonou,Commerce Général,406000,6,10,2130000,REFUSÉ
+CLI-20094,Djeneba Ouédraogo,Abidjan,Artisanat,661000,7,10,3455000,ACCORDÉ
+CLI-20095,Kouassi Ouédraogo,Lomé,Services Numériques,405000,5,7,2135000,REFUSÉ
+CLI-20096,Kouassi Camara,Saint-Louis,Commerce Général,856000,10,3,4720000,ACCORDÉ
+CLI-20097,Hawa Gueye,Ouagadougou,Artisanat,457000,7,8,2475000,REFUSÉ
+CLI-20098,Adama Koffi,Saint-Louis,Transport / Moto-Taxi,799000,5,5,4145000,ACCORDÉ
+CLI-20099,Kouassi Kouadio,Cotonou,Services Numériques,343000,4,8,1755000,REFUSÉ
+CLI-20100,Nafi Ba,Bamako,BTP / Électricité,2990000,7,2,15260000,ACCORDÉ
+CLI-20101,Aminata Ba,Bobo-Dioulasso,Salarié PME,688000,8,1,3820000,ACCORDÉ
+CLI-20102,Moussa Ba,San-Pédro,Artisanat,108000,1,15,290000,REFUSÉ
+CLI-20103,Khadija Diop,Abidjan,Restauration / Maquis,966000,9,3,5220000,ACCORDÉ
+CLI-20104,Bintou Traoré,Bamako,BTP / Électricité,472000,5,10,2410000,REFUSÉ
+CLI-20105,Yao Kouadio,Bobo-Dioulasso,Salarié PME,398000,4,8,2030000,REFUSÉ
+CLI-20106,Koffi Kane,Lomé,Commerce Général,1691000,8,2,8815000,ACCORDÉ
+CLI-20107,Fatou Fofana,Dakar,Commerce Général,1637000,9,0,8635000,ACCORDÉ
+CLI-20108,Amadou Touré,Bamako,Services Numériques,316000,1,18,1270000,REFUSÉ
+CLI-20109,Bintou Barry,Ouagadougou,Agriculture / Vivrier,2420000,7,0,12450000,ACCORDÉ
+CLI-20110,Oumar Soro,Cotonou,Restauration / Maquis,414000,4,7,2130000,REFUSÉ
+CLI-20111,Moussa Ba,Yamoussoukro,BTP / Électricité,2602000,9,0,13460000,ACCORDÉ
+CLI-20112,Adama Kouadio,Abidjan,Services Numériques,196000,2,12,840000,REFUSÉ
+CLI-20113,Bakary Sanogo,Dakar,Artisanat,796000,5,8,4070000,ACCORDÉ
+CLI-20114,Oumar Koffi,Niamey,Artisanat,222000,4,25,810000,REFUSÉ
+CLI-20115,Ibrahim Ndiaye,Bobo-Dioulasso,Artisanat,462000,5,6,2440000,REFUSÉ
+CLI-20116,Djeneba Gueye,Niamey,Artisanat,126000,2,18,370000,REFUSÉ
+CLI-20117,Kouassi Fall,Ouagadougou,Agriculture / Vivrier,1110000,7,2,5860000,ACCORDÉ
+CLI-20118,Fanta Bamba,Lomé,Services Numériques,3171000,9,1,16285000,ACCORDÉ
+CLI-20119,Hawa Ndiaye,Ouagadougou,Agriculture / Vivrier,3066000,9,1,15760000,ACCORDÉ
+CLI-20120,Khadija Ouédraogo,Yamoussoukro,Transport / Moto-Taxi,833000,10,1,4645000,ACCORDÉ
+CLI-20121,Yao Barry,San-Pédro,Salarié PME,442000,7,9,2380000,REFUSÉ
+CLI-20122,Bintou Diop,Bamako,Artisanat,2213000,7,2,11375000,ACCORDÉ
+CLI-20123,Nafi Ouédraogo,Bamako,Transport / Moto-Taxi,2342000,10,2,12170000,ACCORDÉ
+CLI-20124,Tidiane Fofana,Niamey,Transport / Moto-Taxi,675000,10,2,3835000,ACCORDÉ
+CLI-20125,Jean-Baptiste Barry,Saint-Louis,Commerce Général,2416000,7,1,12410000,ACCORDÉ
+CLI-20126,Yao Fall,San-Pédro,Services Numériques,2124000,7,1,10950000,ACCORDÉ
+CLI-20127,Cheikh Fofana,Lomé,Services Numériques,549000,7,4,3015000,ACCORDÉ
+CLI-20128,Nafi Touré,San-Pédro,Commerce Général,399000,7,9,2165000,REFUSÉ
+CLI-20129,Kouassi Sangaré,Ouagadougou,Agriculture / Vivrier,391000,7,8,2145000,REFUSÉ
+CLI-20130,Bakary Fofana,Ouagadougou,Commerce Général,461000,7,3,2595000,ACCORDÉ
+CLI-20131,Mariam Sow,San-Pédro,Artisanat,345000,4,9,1745000,REFUSÉ
+CLI-20132,Adama Ba,Saint-Louis,Agriculture / Vivrier,786000,5,8,4020000,ACCORDÉ
+CLI-20133,Salif Sanogo,Ouagadougou,Commerce Général,346000,2,13,1570000,REFUSÉ
+CLI-20134,Tidiane Diop,San-Pédro,Artisanat,1792000,9,3,9350000,ACCORDÉ
+CLI-20135,Cheikh Sylla,Dakar,Artisanat,156000,1,27,290000,REFUSÉ
+CLI-20136,Hawa Kouadio,Bouaké,Commerce Général,772000,4,9,3880000,ACCORDÉ
+CLI-20137,Oumar Ndiaye,Bouaké,Salarié PME,833000,7,1,4495000,ACCORDÉ
+CLI-20138,Fanta Fall,Bobo-Dioulasso,Restauration / Maquis,467000,4,4,2455000,REFUSÉ
+CLI-20139,Ibrahim Koné,Abidjan,BTP / Électricité,636000,9,2,3590000,ACCORDÉ
+CLI-20140,Abdoulaye Diallo,Dakar,Commerce Général,1247000,8,2,6595000,ACCORDÉ
+CLI-20141,Khadija Kane,Bouaké,Artisanat,627000,4,3,3275000,ACCORDÉ
+CLI-20142,Hawa Touré,Cotonou,BTP / Électricité,85000,4,25,125000,REFUSÉ
+CLI-20143,Kouassi Touré,Ouagadougou,Salarié PME,1650000,9,3,8640000,ACCORDÉ
+CLI-20144,Yao Ndiaye,Bobo-Dioulasso,Transport / Moto-Taxi,2896000,7,3,14770000,ACCORDÉ
+CLI-20145,Sékou Gueye,Niamey,Restauration / Maquis,581000,6,10,3005000,ACCORDÉ
+CLI-20146,Koffi Barry,Ouagadougou,BTP / Électricité,770000,7,9,4020000,ACCORDÉ
+CLI-20147,Boubacar Cissé,San-Pédro,Transport / Moto-Taxi,1311000,7,0,6905000,ACCORDÉ
+CLI-20148,Amadou Fofana,San-Pédro,Agriculture / Vivrier,267000,4,9,1355000,REFUSÉ
+CLI-20149,Bakary Ba,Abidjan,Transport / Moto-Taxi,545000,6,3,2965000,ACCORDÉ
+CLI-20150,Cheikh Touré,Abidjan,BTP / Électricité,1897000,9,3,9875000,ACCORDÉ
+CLI-20151,Sékou Koffi,Ouagadougou,Commerce Général,1917000,10,3,10025000,ACCORDÉ
+CLI-20152,Boubacar Koné,Bouaké,Artisanat,2431000,9,3,12545000,ACCORDÉ
+CLI-20153,Boubacar Bamba,Saint-Louis,Commerce Général,3344000,9,0,17170000,ACCORDÉ
+CLI-20154,Mamadou Koffi,Cotonou,BTP / Électricité,1126000,9,0,6080000,ACCORDÉ
+CLI-20155,Bakary Sanogo,Bobo-Dioulasso,Artisanat,446000,4,6,2310000,REFUSÉ
+CLI-20156,Djeneba Sow,Lomé,Commerce Général,2584000,8,2,13280000,ACCORDÉ
+CLI-20157,Seydou Touré,Saint-Louis,Transport / Moto-Taxi,970000,9,0,5300000,ACCORDÉ
+CLI-20158,Hawa Ndiaye,Bouaké,Agriculture / Vivrier,756000,5,5,3930000,ACCORDÉ
+CLI-20159,Bakary Camara,Cotonou,Restauration / Maquis,912000,8,1,4940000,ACCORDÉ
+CLI-20160,Sékou Koné,Niamey,Salarié PME,797000,4,2,4145000,ACCORDÉ
+CLI-20161,Cheikh Koné,Cotonou,Agriculture / Vivrier,298000,4,10,1490000,REFUSÉ
+CLI-20162,Hawa Kane,Abidjan,Restauration / Maquis,577000,5,7,2995000,ACCORDÉ
+CLI-20163,Mamadou Ndiaye,Lomé,Restauration / Maquis,712000,4,6,3640000,ACCORDÉ
+CLI-20164,Ibrahim Cissé,Dakar,Restauration / Maquis,3112000,7,1,15890000,ACCORDÉ
+CLI-20165,Salif Ba,Lomé,BTP / Électricité,3454000,9,1,17700000,ACCORDÉ
+CLI-20166,Aminata Diallo,Bobo-Dioulasso,Restauration / Maquis,333000,4,9,1685000,REFUSÉ
+CLI-20167,Ibrahim Traoré,Yamoussoukro,Salarié PME,2108000,7,0,10890000,ACCORDÉ
+CLI-20168,Nafi Sanogo,San-Pédro,Artisanat,717000,6,6,3765000,ACCORDÉ
+CLI-20169,Bakary Ndiaye,Bouaké,Agriculture / Vivrier,347000,7,3,2025000,REFUSÉ
+CLI-20170,Seydou Touré,Bouaké,Salarié PME,1438000,8,2,7550000,ACCORDÉ
+CLI-20171,Abdoulaye Ba,Ouagadougou,Services Numériques,596000,6,9,3100000,ACCORDÉ
+CLI-20172,Bintou Traoré,Bouaké,Agriculture / Vivrier,2507000,10,1,13015000,ACCORDÉ
+CLI-20173,Cheikh Ba,Saint-Louis,Artisanat,3495000,7,2,17785000,ACCORDÉ
+CLI-20174,Salif Sylla,Lomé,Agriculture / Vivrier,670000,7,5,3600000,ACCORDÉ
+CLI-20175,Khadija Ouédraogo,Bouaké,Artisanat,1929000,8,3,9985000,ACCORDÉ
+CLI-20176,Boubacar Bamba,Saint-Louis,BTP / Électricité,431000,4,9,2175000,REFUSÉ
+CLI-20177,Awa Koffi,Cotonou,Salarié PME,716000,5,6,3710000,ACCORDÉ
+CLI-20178,Jean-Baptiste Diallo,Yamoussoukro,Agriculture / Vivrier,248000,3,23,930000,REFUSÉ
+CLI-20179,Adama Kane,Dakar,Commerce Général,1082000,7,1,5740000,ACCORDÉ
+CLI-20180,Moussa Diop,Saint-Louis,Salarié PME,3081000,10,1,15885000,ACCORDÉ
+CLI-20181,Mamadou Kane,Lomé,BTP / Électricité,569000,7,7,3055000,ACCORDÉ
+CLI-20182,Kouassi Koffi,Bobo-Dioulasso,Commerce Général,261000,2,17,1065000,REFUSÉ
+CLI-20183,Fatou Ba,Abidjan,Commerce Général,626000,4,6,3210000,ACCORDÉ
+CLI-20184,Tidiane Traoré,Niamey,Transport / Moto-Taxi,663000,6,8,3455000,ACCORDÉ
+CLI-20185,Jean-Baptiste Sanogo,Saint-Louis,Services Numériques,1227000,10,1,6615000,ACCORDÉ
+CLI-20186,Mamadou Fall,Cotonou,Services Numériques,130000,3,29,220000,REFUSÉ
+CLI-20187,Ibrahim Diop,Dakar,Commerce Général,400000,7,8,2190000,REFUSÉ
+CLI-20188,Ibrahim Diallo,Yamoussoukro,Artisanat,289000,4,27,1105000,REFUSÉ
+CLI-20189,Aminata Fofana,Saint-Louis,Services Numériques,251000,3,15,1105000,REFUSÉ
+CLI-20190,Aminata Bamba,Bobo-Dioulasso,Commerce Général,498000,6,8,2630000,ACCORDÉ
+CLI-20191,Abdoulaye Fall,Abidjan,BTP / Électricité,347000,4,30,1335000,REFUSÉ
+CLI-20192,Aïssatou Coulibaly,San-Pédro,Salarié PME,2707000,9,3,13925000,ACCORDÉ
+CLI-20193,Yao Diallo,Bamako,Agriculture / Vivrier,331000,6,2,1915000,REFUSÉ
+CLI-20194,Fanta Sow,Bouaké,Commerce Général,742000,6,8,3850000,ACCORDÉ
+CLI-20195,Aïssatou Touré,Ouagadougou,Restauration / Maquis,3006000,9,2,15440000,ACCORDÉ
+CLI-20196,Fatou Sylla,Bobo-Dioulasso,Salarié PME,716000,9,0,4030000,ACCORDÉ
+CLI-20197,Cheikh Camara,Ouagadougou,Agriculture / Vivrier,541000,6,4,2925000,ACCORDÉ
+CLI-20198,Khadija Kouadio,Lomé,Restauration / Maquis,967000,8,1,5215000,ACCORDÉ
+CLI-20199,Moussa Fofana,Ouagadougou,BTP / Électricité,3439000,8,3,17535000,ACCORDÉ
+CLI-20200,Aminata Soro,Cotonou,Commerce Général,126000,2,23,270000,REFUSÉ
+CLI-20201,Hawa Bamba,Bamako,Services Numériques,425000,5,7,2235000,REFUSÉ
+CLI-20202,Fatou Sylla,Dakar,Restauration / Maquis,2446000,10,3,12670000,ACCORDÉ
+CLI-20203,Cheikh Camara,Niamey,Transport / Moto-Taxi,659000,7,6,3525000,ACCORDÉ
+CLI-20204,Ibrahim Soro,Abidjan,Services Numériques,2382000,10,2,12370000,ACCORDÉ
+CLI-20205,Yao Kane,Dakar,Commerce Général,235000,4,27,835000,REFUSÉ
+CLI-20206,Abdoulaye Sylla,Cotonou,Restauration / Maquis,912000,9,3,4950000,ACCORDÉ
+CLI-20207,Seydou Kane,San-Pédro,Transport / Moto-Taxi,454000,6,4,2490000,REFUSÉ
+CLI-20208,Bakary Fall,Yamoussoukro,Commerce Général,785000,7,3,4215000,ACCORDÉ
+CLI-20209,Awa Soro,Yamoussoukro,Agriculture / Vivrier,1420000,9,2,7510000,ACCORDÉ
+CLI-20210,Mamadou Koné,Bobo-Dioulasso,Commerce Général,2991000,8,0,15355000,ACCORDÉ
+CLI-20211,Djeneba Coulibaly,Bobo-Dioulasso,Agriculture / Vivrier,3253000,8,0,16665000,ACCORDÉ
+CLI-20212,Djeneba Cissé,Lomé,Restauration / Maquis,329000,7,6,1875000,REFUSÉ
+CLI-20213,Hawa Bamba,Lomé,BTP / Électricité,810000,9,0,4500000,ACCORDÉ
+CLI-20214,Jean-Baptiste Sanogo,Abidjan,BTP / Électricité,1610000,8,3,8390000,ACCORDÉ
+CLI-20215,Kouassi Camara,Bobo-Dioulasso,Transport / Moto-Taxi,3207000,10,0,16535000,ACCORDÉ
+CLI-20216,Ibrahim Fall,Bamako,Services Numériques,361000,7,6,2035000,REFUSÉ
+CLI-20217,Awa Koné,Dakar,Agriculture / Vivrier,512000,7,2,2870000,ACCORDÉ
+CLI-20218,Fanta Camara,Yamoussoukro,Artisanat,289000,7,6,1675000,REFUSÉ
+CLI-20219,Ibrahim Gueye,Niamey,BTP / Électricité,790000,7,9,4120000,ACCORDÉ
+CLI-20220,Nafi Sanogo,Saint-Louis,Agriculture / Vivrier,2112000,10,0,11060000,ACCORDÉ
+CLI-20221,Koffi Fall,Cotonou,BTP / Électricité,670000,4,3,3490000,ACCORDÉ
+CLI-20222,Aïssatou Fall,Dakar,BTP / Électricité,202000,2,13,850000,REFUSÉ
+CLI-20223,Salif Koné,Yamoussoukro,Services Numériques,3418000,10,0,17590000,ACCORDÉ
+CLI-20224,Adama Gueye,Bouaké,BTP / Électricité,3154000,10,1,16250000,ACCORDÉ
+CLI-20225,Ibrahim Koné,Abidjan,Transport / Moto-Taxi,500000,7,8,2690000,ACCORDÉ
+CLI-20226,Kouassi Fall,Bouaké,Restauration / Maquis,721000,4,2,3765000,ACCORDÉ
+CLI-20227,Bakary Koné,San-Pédro,BTP / Électricité,995000,8,3,5315000,ACCORDÉ
+CLI-20228,Moussa Fall,San-Pédro,Artisanat,325000,4,4,1745000,REFUSÉ
+CLI-20229,Bintou Sylla,Bouaké,Commerce Général,74000,2,30,-130000,REFUSÉ
+CLI-20230,Adama Diop,Ouagadougou,Commerce Général,572000,4,9,2880000,ACCORDÉ
+CLI-20231,Khadija Cissé,Dakar,Agriculture / Vivrier,2995000,8,0,15375000,ACCORDÉ
+CLI-20232,Boubacar Ndiaye,Cotonou,Services Numériques,260000,3,11,1230000,REFUSÉ
+CLI-20233,Moussa Koffi,Cotonou,Artisanat,161000,1,26,335000,REFUSÉ
+CLI-20234,Aminata Sow,Dakar,Agriculture / Vivrier,2241000,8,2,11565000,ACCORDÉ
+CLI-20235,Salif Cissé,Bamako,Salarié PME,71000,2,11,235000,REFUSÉ
+CLI-20236,Boubacar Sylla,Ouagadougou,Services Numériques,2542000,7,0,13060000,ACCORDÉ
+CLI-20237,Amadou Cissé,San-Pédro,Agriculture / Vivrier,547000,7,9,2905000,ACCORDÉ
+CLI-20238,Djeneba Diop,Ouagadougou,Transport / Moto-Taxi,798000,7,8,4180000,ACCORDÉ
+CLI-20239,Oumar Cissé,Bobo-Dioulasso,Commerce Général,2596000,7,2,13290000,ACCORDÉ
+CLI-20240,Aïssatou Bamba,Saint-Louis,Commerce Général,992000,7,2,5270000,ACCORDÉ
+CLI-20241,Tidiane Fall,Bouaké,Transport / Moto-Taxi,468000,6,2,2600000,ACCORDÉ
+CLI-20242,Mamadou Coulibaly,Yamoussoukro,Artisanat,298000,4,13,1430000,REFUSÉ
+CLI-20243,Aminata Kane,Abidjan,Commerce Général,548000,5,8,2830000,ACCORDÉ
+CLI-20244,Mariam Sow,Abidjan,Salarié PME,720000,8,1,3980000,ACCORDÉ
+CLI-20245,Boubacar Traoré,Saint-Louis,Salarié PME,1486000,10,2,7890000,ACCORDÉ
+CLI-20246,Nafi Ndiaye,Bamako,BTP / Électricité,591000,5,3,3145000,ACCORDÉ
+CLI-20247,Oumar Sangaré,Bamako,Services Numériques,1425000,7,3,7415000,ACCORDÉ
+CLI-20248,Koffi Camara,Niamey,Commerce Général,3056000,10,1,15760000,ACCORDÉ
+CLI-20249,Jean-Baptiste Ba,Bouaké,Artisanat,626000,6,5,3330000,ACCORDÉ
+CLI-20250,Bakary Diop,San-Pédro,Commerce Général,544000,5,3,2910000,ACCORDÉ
+CLI-20251,Tidiane Fofana,Niamey,Salarié PME,1941000,8,2,10065000,ACCORDÉ
+CLI-20252,Khadija Cissé,Bobo-Dioulasso,Artisanat,170000,1,21,480000,REFUSÉ
+CLI-20253,Tidiane Soro,Bamako,Salarié PME,735000,6,2,3935000,ACCORDÉ
+CLI-20254,Sékou Bamba,Bamako,Transport / Moto-Taxi,2930000,8,1,15030000,ACCORDÉ
+CLI-20255,Abdoulaye Koffi,Niamey,Commerce Général,71000,4,24,75000,REFUSÉ
+CLI-20256,Fatou Bamba,Bouaké,Services Numériques,101000,4,23,245000,REFUSÉ
+CLI-20257,Oumar Diallo,San-Pédro,Commerce Général,478000,5,7,2500000,ACCORDÉ
+CLI-20258,Cheikh Ouédraogo,Abidjan,Agriculture / Vivrier,569000,5,9,2915000,ACCORDÉ
+CLI-20259,Tidiane Koffi,Bouaké,Commerce Général,395000,7,4,2245000,REFUSÉ
+CLI-20260,Boubacar Ba,San-Pédro,Salarié PME,324000,7,7,1830000,REFUSÉ
+CLI-20261,Yao Koné,Niamey,Restauration / Maquis,467000,4,7,2395000,REFUSÉ
+CLI-20262,Sékou Koné,Abidjan,BTP / Électricité,2033000,10,0,10665000,ACCORDÉ
+CLI-20263,Aïssatou Ba,Yamoussoukro,Artisanat,320000,5,4,1770000,REFUSÉ
+CLI-20264,Bakary Ouédraogo,Yamoussoukro,Agriculture / Vivrier,469000,5,7,2455000,REFUSÉ
+CLI-20265,Aïssatou Kouadio,Lomé,Services Numériques,2063000,9,3,10705000,ACCORDÉ
+CLI-20266,Bintou Soro,Bouaké,Agriculture / Vivrier,556000,7,7,2990000,ACCORDÉ
+CLI-20267,Boubacar Kane,Bamako,Agriculture / Vivrier,290000,1,10,1300000,REFUSÉ
+CLI-20268,Jean-Baptiste Cissé,Dakar,Restauration / Maquis,1657000,7,1,8615000,ACCORDÉ
+CLI-20269,Bintou Diop,Saint-Louis,Transport / Moto-Taxi,61000,3,21,35000,REFUSÉ
+CLI-20270,Moussa Fall,Bouaké,Artisanat,2361000,7,2,12115000,ACCORDÉ
+CLI-20271,Mamadou Diallo,Bamako,Commerce Général,322000,3,21,1340000,REFUSÉ
+CLI-20272,Koffi Sow,Bouaké,BTP / Électricité,716000,7,6,3810000,ACCORDÉ
+CLI-20273,Koffi Diop,Ouagadougou,Restauration / Maquis,487000,7,7,2645000,ACCORDÉ
+CLI-20274,Cheikh Koné,Cotonou,Artisanat,1197000,8,2,6345000,ACCORDÉ
+CLI-20275,Aminata Cissé,Ouagadougou,Artisanat,672000,9,1,3790000,ACCORDÉ
+CLI-20276,Seydou Kouadio,Ouagadougou,BTP / Électricité,3465000,7,2,17635000,ACCORDÉ
+CLI-20277,Aïssatou Diop,Bouaké,BTP / Électricité,420000,6,3,2340000,REFUSÉ
+CLI-20278,Abdoulaye Traoré,Bouaké,Services Numériques,730000,6,4,3870000,ACCORDÉ
+CLI-20279,Amadou Sangaré,Yamoussoukro,BTP / Électricité,746000,6,4,3950000,ACCORDÉ
+CLI-20280,Boubacar Koffi,Cotonou,Salarié PME,752000,4,4,3880000,ACCORDÉ
+CLI-20281,Moussa Fall,Lomé,Agriculture / Vivrier,3090000,8,3,15790000,ACCORDÉ
+CLI-20282,Aïssatou Diallo,Abidjan,BTP / Électricité,454000,5,6,2400000,REFUSÉ
+CLI-20283,Mamadou Traoré,Saint-Louis,Agriculture / Vivrier,95000,4,14,395000,REFUSÉ
+CLI-20284,Bintou Sow,Yamoussoukro,Commerce Général,1120000,10,2,6060000,ACCORDÉ
+CLI-20285,Jean-Baptiste Ba,Lomé,Commerce Général,1792000,10,0,9460000,ACCORDÉ
+CLI-20286,Mamadou Sangaré,San-Pédro,Salarié PME,281000,3,13,1295000,REFUSÉ
+CLI-20287,Boubacar Sangaré,San-Pédro,Services Numériques,123000,1,12,425000,REFUSÉ
+CLI-20288,Mamadou Touré,Saint-Louis,Salarié PME,84000,4,10,420000,REFUSÉ
+CLI-20289,Amadou Bamba,Niamey,Restauration / Maquis,2438000,8,1,12570000,ACCORDÉ
+CLI-20290,Aminata Sanogo,Saint-Louis,Restauration / Maquis,566000,6,9,2950000,ACCORDÉ
+CLI-20291,Salif Sangaré,Bamako,Salarié PME,510000,8,2,2910000,ACCORDÉ
+CLI-20292,Cheikh Sylla,Dakar,Salarié PME,551000,7,4,3025000,ACCORDÉ
+CLI-20293,Bintou Gueye,Abidjan,Transport / Moto-Taxi,1662000,10,0,8810000,ACCORDÉ
+CLI-20294,Khadija Sangaré,Bobo-Dioulasso,BTP / Électricité,707000,6,9,3655000,ACCORDÉ
+CLI-20295,Djeneba Coulibaly,Saint-Louis,BTP / Électricité,268000,6,4,1560000,REFUSÉ
+CLI-20296,Koffi Koné,Cotonou,Artisanat,392000,6,4,2180000,REFUSÉ
+CLI-20297,Fatou Kouadio,Niamey,BTP / Électricité,623000,4,6,3195000,ACCORDÉ
+CLI-20298,Cheikh Soro,Saint-Louis,Agriculture / Vivrier,3134000,8,0,16070000,ACCORDÉ
+CLI-20299,Khadija Cissé,Cotonou,BTP / Électricité,207000,3,29,605000,REFUSÉ
+CLI-20300,Djeneba Gueye,Dakar,BTP / Électricité,618000,5,2,3300000,ACCORDÉ
+CLI-20301,Ibrahim Soro,Cotonou,Restauration / Maquis,682000,6,4,3630000,ACCORDÉ
+CLI-20302,Awa Ndiaye,Saint-Louis,Artisanat,1290000,7,3,6740000,ACCORDÉ
+CLI-20303,Seydou Diallo,Ouagadougou,Agriculture / Vivrier,301000,3,17,1315000,REFUSÉ
+CLI-20304,Djeneba Ba,Bouaké,Artisanat,324000,3,13,1510000,REFUSÉ
+CLI-20305,Djeneba Touré,San-Pédro,Commerce Général,166000,2,30,330000,REFUSÉ
+CLI-20306,Ibrahim Gueye,Lomé,Transport / Moto-Taxi,1046000,7,3,5520000,ACCORDÉ
+CLI-20307,Djeneba Coulibaly,Abidjan,Agriculture / Vivrier,702000,4,5,3610000,ACCORDÉ
+CLI-20308,Awa Koné,Bouaké,Commerce Général,1561000,7,0,8155000,ACCORDÉ
+CLI-20309,Cheikh Kane,Dakar,Commerce Général,465000,5,4,2495000,REFUSÉ
+CLI-20310,Moussa Ba,Dakar,Commerce Général,1663000,9,2,8725000,ACCORDÉ
+CLI-20311,Aminata Soro,Saint-Louis,Transport / Moto-Taxi,353000,4,10,1765000,REFUSÉ
+CLI-20312,Mamadou Gueye,Lomé,Transport / Moto-Taxi,2752000,7,0,14110000,ACCORDÉ
+CLI-20313,Abdoulaye Ndiaye,Cotonou,Salarié PME,444000,7,3,2510000,ACCORDÉ
+CLI-20314,Aminata Ba,Niamey,Services Numériques,1454000,10,0,7770000,ACCORDÉ
+CLI-20315,Hawa Sow,Bouaké,Agriculture / Vivrier,1070000,10,2,5810000,ACCORDÉ
+CLI-20316,Djeneba Touré,Dakar,Commerce Général,985000,10,2,5385000,ACCORDÉ
+CLI-20317,Seydou Barry,Yamoussoukro,Restauration / Maquis,282000,2,25,1010000,REFUSÉ
+CLI-20318,Nafi Touré,Bamako,Services Numériques,299000,3,13,1385000,REFUSÉ
+CLI-20319,Amadou Kane,Yamoussoukro,Salarié PME,2337000,7,0,12035000,ACCORDÉ
+CLI-20320,Ibrahim Sanogo,San-Pédro,Services Numériques,356000,5,3,1970000,REFUSÉ
+CLI-20321,Aïssatou Ndiaye,Bamako,BTP / Électricité,673000,4,5,3465000,ACCORDÉ
+CLI-20322,Clarisse Bamba,Lomé,Salarié PME,536000,7,7,2890000,ACCORDÉ
+CLI-20323,Bintou Kane,Bouaké,Services Numériques,404000,7,3,2310000,REFUSÉ
+CLI-20324,Awa Kouadio,Bouaké,Salarié PME,1064000,7,0,5670000,ACCORDÉ
+CLI-20325,Sékou Koné,Bouaké,Agriculture / Vivrier,437000,7,7,2395000,REFUSÉ
+CLI-20326,Ibrahim Touré,Dakar,Agriculture / Vivrier,795000,7,9,4145000,ACCORDÉ
+CLI-20327,Mamadou Touré,Bouaké,Salarié PME,610000,4,2,3210000,ACCORDÉ
+CLI-20328,Nafi Coulibaly,Bouaké,Services Numériques,2078000,10,3,10830000,ACCORDÉ
+CLI-20329,Fatou Koné,Saint-Louis,Artisanat,567000,5,9,2905000,ACCORDÉ
+CLI-20330,Nafi Diop,San-Pédro,Restauration / Maquis,958000,10,3,5230000,ACCORDÉ
+CLI-20331,Bintou Fall,Saint-Louis,Artisanat,1604000,10,3,8460000,ACCORDÉ
+CLI-20332,Khadija Kane,Lomé,BTP / Électricité,618000,7,1,3420000,ACCORDÉ
+CLI-20333,Clarisse Ba,San-Pédro,BTP / Électricité,607000,7,3,3325000,ACCORDÉ
+CLI-20334,Nafi Ba,Niamey,BTP / Électricité,3273000,8,1,16745000,ACCORDÉ
+CLI-20335,Oumar Sylla,Bobo-Dioulasso,Restauration / Maquis,3385000,7,2,17235000,ACCORDÉ
+CLI-20336,Awa Sow,Abidjan,Artisanat,289000,7,8,1635000,REFUSÉ
+CLI-20337,Koffi Soro,Lomé,Services Numériques,2470000,7,2,12660000,ACCORDÉ
+CLI-20338,Jean-Baptiste Koffi,Cotonou,Services Numériques,762000,4,5,3910000,ACCORDÉ
+CLI-20339,Bakary Camara,Ouagadougou,BTP / Électricité,630000,7,5,3400000,ACCORDÉ
+CLI-20340,Bintou Sylla,Saint-Louis,Agriculture / Vivrier,1612000,7,2,8370000,ACCORDÉ
+CLI-20341,Koffi Sanogo,Bobo-Dioulasso,Transport / Moto-Taxi,346000,4,7,1790000,REFUSÉ
+CLI-20342,Mariam Diallo,Niamey,Salarié PME,821000,9,2,4515000,ACCORDÉ
+CLI-20343,Nafi Kane,Bamako,BTP / Électricité,1553000,10,1,8245000,ACCORDÉ
+CLI-20344,Fanta Traoré,Bobo-Dioulasso,Artisanat,739000,6,10,3795000,ACCORDÉ
+CLI-20345,Boubacar Barry,Bobo-Dioulasso,Services Numériques,312000,5,7,1670000,REFUSÉ
+CLI-20346,Seydou Diop,Ouagadougou,Transport / Moto-Taxi,564000,7,8,3010000,ACCORDÉ
+CLI-20347,Bakary Diallo,Niamey,Transport / Moto-Taxi,1703000,8,2,8875000,ACCORDÉ
+CLI-20348,Moussa Barry,Niamey,Transport / Moto-Taxi,1128000,8,0,6040000,ACCORDÉ
+CLI-20349,Oumar Touré,Bouaké,Salarié PME,707000,7,2,3845000,ACCORDÉ
+CLI-20350,Mamadou Cissé,Ouagadougou,Restauration / Maquis,1665000,8,0,8725000,ACCORDÉ
+CLI-20351,Sékou Camara,Abidjan,Commerce Général,94000,3,27,80000,REFUSÉ
+CLI-20352,Cheikh Diallo,Cotonou,Services Numériques,344000,7,4,1990000,REFUSÉ
+CLI-20353,Oumar Coulibaly,Saint-Louis,Agriculture / Vivrier,514000,7,3,2860000,ACCORDÉ
+CLI-20354,Oumar Barry,Cotonou,Agriculture / Vivrier,2950000,10,1,15230000,ACCORDÉ
+CLI-20355,Abdoulaye Bamba,Ouagadougou,Transport / Moto-Taxi,1398000,9,3,7380000,ACCORDÉ
+CLI-20356,Nafi Kouadio,Bouaké,Commerce Général,368000,6,10,1940000,REFUSÉ
+CLI-20357,Nafi Camara,Lomé,Transport / Moto-Taxi,125000,3,23,315000,REFUSÉ
+CLI-20358,Djeneba Ba,Abidjan,Restauration / Maquis,286000,4,5,1530000,REFUSÉ
+CLI-20359,Mariam Fall,Lomé,Services Numériques,630000,4,10,3150000,ACCORDÉ
+CLI-20360,Tidiane Ouédraogo,Niamey,Salarié PME,2148000,9,2,11150000,ACCORDÉ
+CLI-20361,Kouassi Ouédraogo,Bamako,Restauration / Maquis,134000,4,28,310000,REFUSÉ
+CLI-20362,Bakary Sylla,Abidjan,Services Numériques,835000,10,3,4615000,ACCORDÉ
+CLI-20363,Sékou Bamba,San-Pédro,BTP / Électricité,921000,8,2,4965000,ACCORDÉ
+CLI-20364,Yao Diallo,Niamey,BTP / Électricité,592000,7,2,3270000,ACCORDÉ
+CLI-20365,Hawa Koné,Yamoussoukro,Artisanat,3188000,8,0,16340000,ACCORDÉ
+CLI-20366,Jean-Baptiste Ndiaye,Cotonou,Restauration / Maquis,366000,5,5,1980000,REFUSÉ
+CLI-20367,Yao Gueye,Bobo-Dioulasso,Artisanat,584000,7,9,3090000,ACCORDÉ
+CLI-20368,Tidiane Sangaré,Lomé,Artisanat,2987000,9,2,15345000,ACCORDÉ
+CLI-20369,Mamadou Diallo,Cotonou,Services Numériques,2082000,8,0,10810000,ACCORDÉ
+CLI-20370,Amadou Fall,Dakar,Transport / Moto-Taxi,153000,3,30,315000,REFUSÉ
+CLI-20371,Tidiane Cissé,Niamey,Commerce Général,522000,5,3,2800000,ACCORDÉ
+CLI-20372,Aïssatou Cissé,Abidjan,Agriculture / Vivrier,706000,7,9,3700000,ACCORDÉ
+CLI-20373,Awa Ouédraogo,Bamako,Transport / Moto-Taxi,189000,3,23,635000,REFUSÉ
+CLI-20374,Jean-Baptiste Diop,Bamako,Services Numériques,546000,5,8,2820000,ACCORDÉ
+CLI-20375,Aminata Bamba,Abidjan,Artisanat,1598000,8,3,8330000,ACCORDÉ
+CLI-20376,Abdoulaye Ouédraogo,Bobo-Dioulasso,BTP / Électricité,730000,4,2,3810000,ACCORDÉ
+CLI-20377,Bintou Diop,San-Pédro,BTP / Électricité,1390000,10,3,7390000,ACCORDÉ
+CLI-20378,Sékou Barry,Dakar,Restauration / Maquis,746000,7,2,4040000,ACCORDÉ
+CLI-20379,Abdoulaye Ouédraogo,Cotonou,Salarié PME,73000,1,16,95000,REFUSÉ
+CLI-20380,Yao Barry,Lomé,Services Numériques,244000,2,25,820000,REFUSÉ
+CLI-20381,Fatou Koffi,Lomé,Artisanat,2567000,9,3,13225000,ACCORDÉ
+CLI-20382,Ibrahim Diallo,San-Pédro,BTP / Électricité,398000,6,3,2230000,REFUSÉ
+CLI-20383,Bakary Koné,Bouaké,Artisanat,197000,3,21,715000,REFUSÉ
+CLI-20384,Cheikh Kouadio,Saint-Louis,Restauration / Maquis,1191000,9,3,6345000,ACCORDÉ
+CLI-20385,Hawa Diop,Abidjan,Salarié PME,728000,8,1,4020000,ACCORDÉ
+CLI-20386,Fatou Camara,Ouagadougou,Restauration / Maquis,707000,4,9,3555000,ACCORDÉ
+CLI-20387,Fatou Fofana,San-Pédro,BTP / Électricité,729000,7,3,3935000,ACCORDÉ
+CLI-20388,Tidiane Sangaré,Dakar,Artisanat,1354000,9,1,7200000,ACCORDÉ
+CLI-20389,Clarisse Cissé,Bobo-Dioulasso,Restauration / Maquis,161000,1,24,375000,REFUSÉ
+CLI-20390,Hawa Koffi,Niamey,Artisanat,179000,4,29,515000,REFUSÉ
+CLI-20391,Awa Sow,Lomé,Commerce Général,377000,7,7,2095000,REFUSÉ
+CLI-20392,Koffi Coulibaly,Ouagadougou,BTP / Électricité,2430000,10,3,12590000,ACCORDÉ
+CLI-20393,Adama Kouadio,Cotonou,Commerce Général,287000,3,26,1065000,REFUSÉ
+CLI-20394,Ibrahim Ndiaye,Yamoussoukro,Commerce Général,732000,7,3,3950000,ACCORDÉ
+CLI-20395,Kouassi Sanogo,Ouagadougou,Restauration / Maquis,2173000,7,0,11215000,ACCORDÉ
+CLI-20396,Tidiane Ndiaye,Niamey,Artisanat,548000,5,3,2930000,ACCORDÉ
+CLI-20397,Cheikh Camara,San-Pédro,Services Numériques,212000,2,19,780000,REFUSÉ
+CLI-20398,Moussa Coulibaly,Saint-Louis,BTP / Électricité,2368000,10,3,12280000,ACCORDÉ
+CLI-20399,Mariam Koffi,Dakar,Services Numériques,636000,5,8,3270000,ACCORDÉ
+CLI-20400,Adama Bamba,Abidjan,Agriculture / Vivrier,736000,5,4,3850000,ACCORDÉ
+CLI-20401,Abdoulaye Camara,Lomé,Agriculture / Vivrier,333000,7,6,1895000,REFUSÉ
+CLI-20402,Ibrahim Diop,Bamako,Restauration / Maquis,559000,4,10,2795000,ACCORDÉ
+CLI-20403,Kouassi Koné,Saint-Louis,Agriculture / Vivrier,896000,10,2,4940000,ACCORDÉ
+CLI-20404,Aïssatou Kouadio,Saint-Louis,Agriculture / Vivrier,3274000,10,1,16850000,ACCORDÉ
+CLI-20405,Boubacar Cissé,Abidjan,Services Numériques,3454000,9,2,17680000,ACCORDÉ
+CLI-20406,Koffi Sangaré,Yamoussoukro,Salarié PME,1611000,9,1,8485000,ACCORDÉ
+CLI-20407,Mamadou Cissé,San-Pédro,Agriculture / Vivrier,185000,1,21,555000,REFUSÉ
+CLI-20408,Salif Traoré,Niamey,Commerce Général,1220000,10,3,6540000,ACCORDÉ
+CLI-20409,Djeneba Sanogo,Lomé,Salarié PME,628000,7,6,3370000,ACCORDÉ
+CLI-20410,Kouassi Diop,Abidjan,Artisanat,566000,8,0,3230000,ACCORDÉ
+CLI-20411,Mamadou Camara,Yamoussoukro,Artisanat,3125000,8,0,16025000,ACCORDÉ
+CLI-20412,Cheikh Fofana,Bouaké,Artisanat,988000,8,1,5320000,ACCORDÉ
+CLI-20413,Sékou Gueye,Bouaké,Salarié PME,721000,5,5,3755000,ACCORDÉ
+CLI-20414,Cheikh Koffi,Abidjan,Services Numériques,930000,10,3,5090000,ACCORDÉ
+CLI-20415,Tidiane Camara,Abidjan,Restauration / Maquis,759000,7,5,4045000,ACCORDÉ
+CLI-20416,Djeneba Koné,Niamey,Commerce Général,316000,6,8,1720000,REFUSÉ
+CLI-20417,Fanta Camara,Bouaké,Agriculture / Vivrier,613000,7,8,3255000,ACCORDÉ
+CLI-20418,Amadou Cissé,San-Pédro,Restauration / Maquis,1942000,10,1,10190000,ACCORDÉ
+CLI-20419,Yao Ouédraogo,Bobo-Dioulasso,BTP / Électricité,295000,2,17,1235000,REFUSÉ
+CLI-20420,Sékou Gueye,Niamey,Services Numériques,238000,4,13,1130000,REFUSÉ
+CLI-20421,Khadija Ndiaye,San-Pédro,Restauration / Maquis,756000,5,4,3950000,ACCORDÉ
+CLI-20422,Mamadou Cissé,Dakar,Salarié PME,767000,6,5,4035000,ACCORDÉ
+CLI-20423,Mamadou Fall,Abidjan,Commerce Général,1593000,9,1,8395000,ACCORDÉ
+CLI-20424,Aminata Soro,Dakar,Commerce Général,978000,8,0,5290000,ACCORDÉ
+CLI-20425,Salif Ouédraogo,Lomé,Salarié PME,236000,1,25,730000,REFUSÉ
+CLI-20426,Mariam Diop,San-Pédro,Agriculture / Vivrier,2336000,10,0,12180000,ACCORDÉ
+CLI-20427,Awa Barry,Saint-Louis,Agriculture / Vivrier,942000,8,0,5110000,ACCORDÉ
+CLI-20428,Tidiane Ndiaye,Ouagadougou,BTP / Électricité,712000,7,3,3850000,ACCORDÉ
+CLI-20429,Ibrahim Sylla,Cotonou,BTP / Électricité,114000,2,22,230000,REFUSÉ
+CLI-20430,Nafi Traoré,Bouaké,Transport / Moto-Taxi,2618000,8,0,13490000,ACCORDÉ
+CLI-20431,Mariam Ba,Cotonou,Services Numériques,507000,5,10,2585000,ACCORDÉ
+CLI-20432,Nafi Ouédraogo,Niamey,Artisanat,2216000,10,2,11540000,ACCORDÉ
+CLI-20433,Amadou Fofana,Abidjan,Artisanat,792000,4,3,4100000,ACCORDÉ
+CLI-20434,Bakary Sow,Ouagadougou,Services Numériques,2149000,7,1,11075000,ACCORDÉ
+CLI-20435,Fanta Koffi,Yamoussoukro,Commerce Général,322000,3,21,1340000,REFUSÉ
+CLI-20436,Jean-Baptiste Kane,San-Pédro,Restauration / Maquis,610000,4,6,3130000,ACCORDÉ
+CLI-20437,Fanta Soro,San-Pédro,Artisanat,3200000,8,3,16340000,ACCORDÉ
+CLI-20438,Djeneba Ba,Bamako,Services Numériques,94000,1,25,20000,REFUSÉ
+CLI-20439,Bakary Sanogo,Saint-Louis,Artisanat,198000,2,10,890000,REFUSÉ
+CLI-20440,Yao Fall,Saint-Louis,Restauration / Maquis,3166000,8,0,16230000,ACCORDÉ
+CLI-20441,Amadou Fall,Bamako,Restauration / Maquis,209000,4,24,765000,REFUSÉ
+CLI-20442,Awa Sangaré,Cotonou,Commerce Général,2628000,9,0,13590000,ACCORDÉ
+CLI-20443,Fatou Sylla,Bouaké,Agriculture / Vivrier,521000,10,2,3065000,ACCORDÉ
+CLI-20444,Oumar Sangaré,Cotonou,Transport / Moto-Taxi,3297000,8,3,16825000,ACCORDÉ
+CLI-20445,Yao Sangaré,Dakar,Transport / Moto-Taxi,2942000,8,2,15070000,ACCORDÉ
+CLI-20446,Seydou Coulibaly,San-Pédro,Artisanat,2228000,7,0,11490000,ACCORDÉ
+CLI-20447,Fatou Bamba,Bouaké,Artisanat,827000,9,3,4525000,ACCORDÉ
+CLI-20448,Koffi Fall,Lomé,Services Numériques,693000,7,9,3635000,ACCORDÉ
+CLI-20449,Sékou Bamba,Ouagadougou,Artisanat,758000,7,4,4060000,ACCORDÉ
+CLI-20450,Djeneba Soro,San-Pédro,Agriculture / Vivrier,2485000,7,1,12755000,ACCORDÉ
+CLI-20451,Salif Ba,Bobo-Dioulasso,Agriculture / Vivrier,107000,1,19,205000,REFUSÉ
+CLI-20452,Koffi Touré,Saint-Louis,Commerce Général,2058000,9,2,10700000,ACCORDÉ
+CLI-20453,Cheikh Touré,Abidjan,Salarié PME,399000,7,2,2305000,REFUSÉ
+CLI-20454,Abdoulaye Touré,Bamako,Restauration / Maquis,2550000,7,0,13100000,ACCORDÉ
+CLI-20455,Salif Ba,Abidjan,Agriculture / Vivrier,2903000,9,3,14905000,ACCORDÉ
+CLI-20456,Fanta Sow,Bouaké,Services Numériques,119000,2,24,215000,REFUSÉ
+CLI-20457,Adama Fofana,Yamoussoukro,Salarié PME,1864000,7,3,9610000,ACCORDÉ
+CLI-20458,Jean-Baptiste Ouédraogo,Cotonou,Services Numériques,714000,6,3,3810000,ACCORDÉ
+CLI-20459,Tidiane Cissé,Bobo-Dioulasso,Commerce Général,573000,4,10,2865000,ACCORDÉ
+CLI-20460,Kouassi Ndiaye,Bobo-Dioulasso,Commerce Général,748000,4,3,3880000,ACCORDÉ
+CLI-20461,Moussa Fall,Abidjan,Artisanat,1363000,8,3,7155000,ACCORDÉ
+CLI-20462,Kouassi Fall,Niamey,BTP / Électricité,765000,4,7,3885000,ACCORDÉ
+CLI-20463,Nafi Cissé,Abidjan,Services Numériques,216000,4,16,960000,REFUSÉ
+CLI-20464,Kouassi Coulibaly,Saint-Louis,Agriculture / Vivrier,1104000,8,2,5880000,ACCORDÉ
+CLI-20465,Hawa Diallo,Lomé,Artisanat,138000,1,27,200000,REFUSÉ
+CLI-20466,Bakary Cissé,San-Pédro,Commerce Général,2135000,7,2,10985000,ACCORDÉ
+CLI-20467,Ibrahim Bamba,Lomé,BTP / Électricité,1007000,7,1,5365000,ACCORDÉ
+CLI-20468,Oumar Barry,Bouaké,Transport / Moto-Taxi,778000,7,3,4180000,ACCORDÉ
+CLI-20469,Mariam Koné,Bouaké,BTP / Électricité,318000,7,2,1900000,REFUSÉ
+CLI-20470,Nafi Sylla,Abidjan,Transport / Moto-Taxi,2958000,7,1,15120000,ACCORDÉ
+CLI-20471,Hawa Fall,Lomé,Artisanat,717000,4,10,3585000,ACCORDÉ
+CLI-20472,Mamadou Diop,Saint-Louis,BTP / Électricité,178000,4,25,590000,REFUSÉ
+CLI-20473,Seydou Koné,Bouaké,Commerce Général,201000,2,8,945000,REFUSÉ
+CLI-20474,Fatou Camara,Bobo-Dioulasso,Restauration / Maquis,3352000,10,2,17220000,ACCORDÉ
+CLI-20475,Clarisse Sylla,Bobo-Dioulasso,Transport / Moto-Taxi,197000,1,13,775000,REFUSÉ
+CLI-20476,Sékou Fall,Lomé,Agriculture / Vivrier,3429000,7,1,17475000,ACCORDÉ
+CLI-20477,Sékou Fall,Niamey,Restauration / Maquis,2617000,9,2,13495000,ACCORDÉ
+CLI-20478,Adama Kouadio,Lomé,Salarié PME,1849000,9,1,9675000,ACCORDÉ
+CLI-20479,Seydou Barry,Abidjan,BTP / Électricité,120000,1,27,110000,REFUSÉ
+CLI-20480,Bintou Traoré,Yamoussoukro,Commerce Général,2831000,10,3,14595000,ACCORDÉ
+CLI-20481,Salif Diallo,Saint-Louis,Agriculture / Vivrier,3316000,10,0,17080000,ACCORDÉ
+CLI-20482,Aïssatou Sanogo,Niamey,BTP / Électricité,3423000,7,0,17465000,ACCORDÉ
+CLI-20483,Seydou Ba,Bouaké,Transport / Moto-Taxi,582000,9,2,3320000,ACCORDÉ
+CLI-20484,Mamadou Diallo,San-Pédro,Restauration / Maquis,2571000,9,0,13305000,ACCORDÉ
+CLI-20485,Mariam Camara,Abidjan,Transport / Moto-Taxi,3177000,10,0,16385000,ACCORDÉ
+CLI-20486,Tidiane Kouadio,Ouagadougou,Salarié PME,434000,4,4,2290000,REFUSÉ
+CLI-20487,Sékou Diallo,Lomé,Artisanat,169000,3,14,715000,REFUSÉ
+CLI-20488,Tidiane Kane,San-Pédro,Commerce Général,515000,7,2,2885000,ACCORDÉ
+CLI-20489,Nafi Sylla,Cotonou,Commerce Général,2206000,9,0,11480000,ACCORDÉ
+CLI-20490,Moussa Soro,Bouaké,Salarié PME,682000,8,0,3810000,ACCORDÉ
+CLI-20491,Mariam Bamba,Cotonou,Salarié PME,1316000,9,0,7030000,ACCORDÉ
+CLI-20492,Fanta Koffi,San-Pédro,Commerce Général,3392000,10,0,17460000,ACCORDÉ
+CLI-20493,Abdoulaye Ouédraogo,Ouagadougou,Transport / Moto-Taxi,763000,7,0,4165000,ACCORDÉ
+CLI-20494,Bintou Bamba,Bobo-Dioulasso,Commerce Général,600000,6,5,3200000,ACCORDÉ
+CLI-20495,Awa Camara,Cotonou,Transport / Moto-Taxi,224000,2,10,1020000,REFUSÉ
+CLI-20496,Hawa Barry,Dakar,Salarié PME,380000,4,2,2060000,REFUSÉ
+CLI-20497,Abdoulaye Koné,Cotonou,Services Numériques,84000,2,9,340000,REFUSÉ
+CLI-20498,Abdoulaye Fofana,Lomé,Commerce Général,702000,4,3,3650000,ACCORDÉ
+CLI-20499,Moussa Koné,Lomé,Commerce Général,260000,1,27,810000,REFUSÉ
+CLI-20500,Hawa Bamba,Bobo-Dioulasso,Transport / Moto-Taxi,261000,7,8,1495000,REFUSÉ
+CLI-20501,Seydou Bamba,Cotonou,Agriculture / Vivrier,277000,7,10,1535000,REFUSÉ
+CLI-20502,Bakary Koffi,Dakar,Transport / Moto-Taxi,2996000,7,1,15310000,ACCORDÉ
+CLI-20503,Fanta Koffi,Yamoussoukro,Artisanat,622000,7,9,3280000,ACCORDÉ
+CLI-20504,Sékou Barry,Ouagadougou,Salarié PME,684000,7,1,3750000,ACCORDÉ
+CLI-20505,Cheikh Koffi,Saint-Louis,Services Numériques,237000,3,26,815000,REFUSÉ
+CLI-20506,Fanta Fall,Ouagadougou,Artisanat,609000,6,7,3205000,ACCORDÉ
+CLI-20507,Amadou Soro,Abidjan,Artisanat,2846000,7,3,14520000,ACCORDÉ
+CLI-20508,Aïssatou Ndiaye,Yamoussoukro,Transport / Moto-Taxi,85000,3,14,295000,REFUSÉ
+CLI-20509,Moussa Camara,Bobo-Dioulasso,Salarié PME,601000,6,8,3145000,ACCORDÉ
+CLI-20510,Bakary Cissé,Bouaké,Agriculture / Vivrier,72000,4,15,260000,REFUSÉ
+CLI-20511,Abdoulaye Traoré,San-Pédro,Transport / Moto-Taxi,3116000,8,1,15960000,ACCORDÉ
+CLI-20512,Bintou Sangaré,San-Pédro,BTP / Électricité,2179000,8,0,11295000,ACCORDÉ
+CLI-20513,Aïssatou Traoré,Cotonou,Agriculture / Vivrier,983000,8,2,5275000,ACCORDÉ
+CLI-20514,Seydou Ndiaye,Abidjan,BTP / Électricité,154000,2,17,530000,REFUSÉ
+CLI-20515,Aminata Ouédraogo,San-Pédro,Restauration / Maquis,2825000,8,1,14505000,ACCORDÉ
+CLI-20516,Mamadou Traoré,Lomé,Artisanat,61000,2,20,5000,REFUSÉ
+CLI-20517,Adama Coulibaly,Bamako,BTP / Électricité,1507000,9,2,7945000,ACCORDÉ
+CLI-20518,Moussa Cissé,San-Pédro,Services Numériques,1105000,8,1,5905000,ACCORDÉ
+CLI-20519,Mamadou Fall,San-Pédro,Services Numériques,3014000,10,1,15550000,ACCORDÉ
+CLI-20520,Abdoulaye Koné,Saint-Louis,Transport / Moto-Taxi,1123000,9,1,6045000,ACCORDÉ
+CLI-20521,Fatou Sylla,Ouagadougou,Restauration / Maquis,306000,2,10,1430000,REFUSÉ
+CLI-20522,Boubacar Camara,Ouagadougou,Agriculture / Vivrier,783000,6,9,4035000,ACCORDÉ
+CLI-20523,Yao Fofana,Cotonou,Artisanat,756000,7,9,3950000,ACCORDÉ
+CLI-20524,Mariam Koffi,Yamoussoukro,Services Numériques,69000,2,15,145000,REFUSÉ
+CLI-20525,Fanta Ndiaye,Bamako,Salarié PME,1783000,10,3,9355000,ACCORDÉ
+CLI-20526,Koffi Cissé,Lomé,BTP / Électricité,390000,4,6,2030000,REFUSÉ
+CLI-20527,Seydou Soro,Bamako,BTP / Électricité,737000,6,8,3825000,ACCORDÉ
+CLI-20528,Seydou Fofana,Niamey,Services Numériques,2586000,9,2,13340000,ACCORDÉ
+CLI-20529,Jean-Baptiste Traoré,Bouaké,Artisanat,3206000,7,2,16340000,ACCORDÉ
+CLI-20530,Fanta Diallo,Saint-Louis,Restauration / Maquis,331000,6,5,1855000,REFUSÉ
+CLI-20531,Awa Coulibaly,Cotonou,Agriculture / Vivrier,1340000,9,1,7130000,ACCORDÉ
+CLI-20532,Moussa Sow,Lomé,Restauration / Maquis,537000,5,4,2855000,ACCORDÉ
+CLI-20533,Tidiane Gueye,Abidjan,Restauration / Maquis,545000,6,8,2865000,ACCORDÉ
+CLI-20534,Jean-Baptiste Koffi,Bouaké,Commerce Général,406000,7,5,2280000,REFUSÉ
+CLI-20535,Oumar Sangaré,Bouaké,Transport / Moto-Taxi,2962000,10,3,15250000,ACCORDÉ
+CLI-20536,Bakary Diallo,Bamako,BTP / Électricité,3427000,10,1,17615000,ACCORDÉ
+CLI-20537,Seydou Fofana,Cotonou,Commerce Général,1038000,9,0,5640000,ACCORDÉ
+CLI-20538,Bintou Kane,Cotonou,BTP / Électricité,2285000,10,2,11885000,ACCORDÉ
+CLI-20539,Bakary Koffi,Bobo-Dioulasso,Commerce Général,395000,5,7,2085000,REFUSÉ
+CLI-20540,Koffi Sylla,Niamey,Services Numériques,2138000,7,3,10980000,ACCORDÉ
+CLI-20541,Mamadou Camara,Cotonou,Agriculture / Vivrier,723000,6,3,3855000,ACCORDÉ
+CLI-20542,Aminata Coulibaly,Abidjan,Artisanat,306000,1,13,1320000,REFUSÉ
+CLI-20543,Mamadou Diallo,Lomé,Services Numériques,1720000,7,3,8890000,ACCORDÉ
+CLI-20544,Fatou Ba,Ouagadougou,Commerce Général,2223000,10,1,11595000,ACCORDÉ
+CLI-20545,Awa Diop,Bouaké,Services Numériques,657000,5,4,3455000,ACCORDÉ
+CLI-20546,Tidiane Ndiaye,Niamey,Restauration / Maquis,298000,2,27,1050000,REFUSÉ
+CLI-20547,Koffi Touré,Saint-Louis,Transport / Moto-Taxi,731000,6,5,3855000,ACCORDÉ
+CLI-20548,Amadou Diop,Dakar,Salarié PME,179000,3,26,525000,REFUSÉ
+CLI-20549,Fanta Camara,Bouaké,Salarié PME,345000,6,9,1845000,REFUSÉ
+CLI-20550,Aïssatou Gueye,Niamey,Restauration / Maquis,433000,7,5,2415000,REFUSÉ
+CLI-20551,Aminata Barry,Bouaké,Services Numériques,3264000,8,0,16720000,ACCORDÉ
+CLI-20552,Jean-Baptiste Gueye,Bamako,Commerce Général,132000,3,28,250000,REFUSÉ
+CLI-20553,Salif Touré,San-Pédro,Agriculture / Vivrier,477000,7,8,2575000,ACCORDÉ
+CLI-20554,Hawa Fall,Cotonou,Agriculture / Vivrier,941000,9,3,5095000,ACCORDÉ
+CLI-20555,Seydou Cissé,Bamako,Restauration / Maquis,734000,4,3,3810000,ACCORDÉ
+CLI-20556,Adama Gueye,Niamey,Salarié PME,2174000,8,3,11210000,ACCORDÉ
+CLI-20557,Fatou Traoré,Dakar,Restauration / Maquis,393000,6,9,2085000,REFUSÉ
+CLI-20558,Bintou Fofana,Dakar,Agriculture / Vivrier,504000,7,4,2790000,ACCORDÉ
+CLI-20559,Bintou Kouadio,Ouagadougou,Artisanat,102000,2,17,270000,REFUSÉ
+CLI-20560,Awa Fall,Ouagadougou,Services Numériques,547000,9,1,3165000,ACCORDÉ
+CLI-20561,Seydou Ba,Bamako,Artisanat,476000,7,2,2690000,ACCORDÉ
+CLI-20562,Clarisse Sylla,Niamey,Agriculture / Vivrier,715000,4,2,3735000,ACCORDÉ
+CLI-20563,Fatou Sanogo,Bamako,Transport / Moto-Taxi,1500000,8,0,7900000,ACCORDÉ
+CLI-20564,Amadou Bamba,Abidjan,Commerce Général,1305000,7,1,6855000,ACCORDÉ
+CLI-20565,Fanta Coulibaly,San-Pédro,Artisanat,2243000,7,2,11525000,ACCORDÉ
+CLI-20566,Bakary Fall,Bobo-Dioulasso,Transport / Moto-Taxi,2772000,10,3,14300000,ACCORDÉ
+CLI-20567,Awa Ouédraogo,Dakar,Transport / Moto-Taxi,1228000,7,3,6430000,ACCORDÉ
+CLI-20568,Adama Sow,Niamey,Commerce Général,1423000,7,2,7425000,ACCORDÉ
+CLI-20569,Adama Barry,Abidjan,BTP / Électricité,1416000,10,2,7540000,ACCORDÉ
+CLI-20570,Hawa Barry,Dakar,Salarié PME,429000,6,3,2385000,REFUSÉ
+CLI-20571,Khadija Sow,Yamoussoukro,Services Numériques,119000,3,13,485000,REFUSÉ
+CLI-20572,Adama Gueye,Yamoussoukro,BTP / Électricité,601000,4,9,3025000,ACCORDÉ
+CLI-20573,Jean-Baptiste Soro,Saint-Louis,Transport / Moto-Taxi,263000,5,2,1525000,REFUSÉ
+CLI-20574,Khadija Coulibaly,Bamako,Restauration / Maquis,505000,4,2,2685000,ACCORDÉ
+CLI-20575,Ibrahim Ba,Lomé,Salarié PME,2076000,8,0,10780000,ACCORDÉ
+CLI-20576,Oumar Sangaré,San-Pédro,Salarié PME,120000,3,18,390000,REFUSÉ
+CLI-20577,Adama Koné,Yamoussoukro,Services Numériques,62000,2,18,50000,REFUSÉ
+CLI-20578,Bakary Ouédraogo,Saint-Louis,Transport / Moto-Taxi,3289000,8,1,16825000,ACCORDÉ
+CLI-20579,Khadija Sanogo,Ouagadougou,BTP / Électricité,525000,7,3,2915000,ACCORDÉ
+CLI-20580,Kouassi Ndiaye,Yamoussoukro,Commerce Général,157000,2,10,685000,REFUSÉ
+CLI-20581,Aminata Koffi,Bamako,Transport / Moto-Taxi,696000,7,6,3710000,ACCORDÉ
+CLI-20582,Aminata Sangaré,Bamako,Transport / Moto-Taxi,3041000,8,2,15565000,ACCORDÉ
+CLI-20583,Cheikh Koffi,Yamoussoukro,Salarié PME,2518000,7,2,12900000,ACCORDÉ
+CLI-20584,Jean-Baptiste Sanogo,Bouaké,Artisanat,2619000,10,1,13575000,ACCORDÉ
+CLI-20585,Clarisse Camara,Niamey,Commerce Général,849000,9,1,4675000,ACCORDÉ
+CLI-20586,Salif Sangaré,Lomé,Artisanat,1782000,10,2,9370000,ACCORDÉ
+CLI-20587,Jean-Baptiste Fall,Dakar,Salarié PME,3498000,10,1,17970000,ACCORDÉ
+CLI-20588,Ibrahim Ndiaye,Abidjan,Commerce Général,246000,4,20,1030000,REFUSÉ
+CLI-20589,Abdoulaye Bamba,San-Pédro,Services Numériques,2553000,9,0,13215000,ACCORDÉ
+CLI-20590,Nafi Koné,Niamey,Agriculture / Vivrier,135000,2,21,355000,REFUSÉ
+CLI-20591,Mariam Sangaré,Saint-Louis,BTP / Électricité,636000,4,8,3220000,ACCORDÉ
+CLI-20592,Abdoulaye Bamba,Bamako,Transport / Moto-Taxi,628000,4,4,3260000,ACCORDÉ
+CLI-20593,Mariam Barry,Yamoussoukro,Salarié PME,1537000,8,0,8085000,ACCORDÉ
+CLI-20594,Awa Diallo,Niamey,Services Numériques,334000,5,8,1760000,REFUSÉ
+CLI-20595,Aminata Bamba,San-Pédro,Restauration / Maquis,2736000,10,2,14140000,ACCORDÉ
+CLI-20596,Sékou Bamba,Dakar,Agriculture / Vivrier,611000,5,6,3185000,ACCORDÉ
+CLI-20597,Sékou Ndiaye,San-Pédro,Services Numériques,1206000,10,0,6530000,ACCORDÉ
+CLI-20598,Awa Diallo,Saint-Louis,Services Numériques,1709000,10,1,9025000,ACCORDÉ
+CLI-20599,Aminata Ba,San-Pédro,Artisanat,2540000,8,0,13100000,ACCORDÉ
+CLI-20600,Seydou Koffi,Ouagadougou,Transport / Moto-Taxi,1266000,8,2,6690000,ACCORDÉ
+CLI-20601,Fanta Bamba,Yamoussoukro,Salarié PME,107000,2,10,435000,REFUSÉ
+CLI-20602,Cheikh Diallo,Dakar,Services Numériques,1935000,7,1,10005000,ACCORDÉ
+CLI-20603,Bintou Camara,Abidjan,Agriculture / Vivrier,530000,7,0,3000000,ACCORDÉ
+CLI-20604,Mamadou Soro,Niamey,Commerce Général,528000,7,9,2810000,ACCORDÉ
+CLI-20605,Hawa Sow,Cotonou,Services Numériques,1938000,9,1,10120000,ACCORDÉ
+CLI-20606,Aïssatou Kane,Niamey,Services Numériques,623000,6,3,3355000,ACCORDÉ
+CLI-20607,Amadou Fofana,San-Pédro,Services Numériques,122000,1,27,120000,REFUSÉ
+CLI-20608,Awa Soro,San-Pédro,Restauration / Maquis,510000,6,9,2670000,ACCORDÉ
+CLI-20609,Khadija Kane,Saint-Louis,Salarié PME,1288000,7,2,6750000,ACCORDÉ
+CLI-20610,Amadou Sylla,Abidjan,BTP / Électricité,220000,4,15,1000000,REFUSÉ
+CLI-20611,Khadija Camara,San-Pédro,Services Numériques,335000,6,8,1815000,REFUSÉ
+CLI-20612,Abdoulaye Camara,San-Pédro,Agriculture / Vivrier,3046000,8,1,15610000,ACCORDÉ
+CLI-20613,Tidiane Soro,Ouagadougou,Commerce Général,341000,6,10,1805000,REFUSÉ
+CLI-20614,Tidiane Fofana,Bouaké,Artisanat,302000,2,15,1310000,REFUSÉ
+CLI-20615,Mamadou Cissé,Dakar,Agriculture / Vivrier,622000,8,2,3470000,ACCORDÉ
+CLI-20616,Fanta Sanogo,Bamako,Restauration / Maquis,749000,4,4,3865000,ACCORDÉ
+CLI-20617,Abdoulaye Fall,Dakar,Salarié PME,598000,5,3,3180000,ACCORDÉ
+CLI-20618,Adama Sow,San-Pédro,Services Numériques,650000,7,5,3500000,ACCORDÉ
+CLI-20619,Oumar Kouadio,Lomé,Agriculture / Vivrier,873000,9,1,4795000,ACCORDÉ
+CLI-20620,Sékou Coulibaly,Ouagadougou,BTP / Électricité,249000,1,17,955000,REFUSÉ
+CLI-20621,Fatou Koffi,Niamey,Transport / Moto-Taxi,217000,3,29,655000,REFUSÉ
+CLI-20622,Abdoulaye Diop,Dakar,Transport / Moto-Taxi,2757000,10,2,14245000,ACCORDÉ
+CLI-20623,Ibrahim Touré,Bouaké,Transport / Moto-Taxi,404000,6,4,2240000,REFUSÉ
+CLI-20624,Sékou Kane,Bobo-Dioulasso,Commerce Général,2607000,7,2,13345000,ACCORDÉ
+CLI-20625,Tidiane Gueye,Yamoussoukro,Salarié PME,309000,3,30,1095000,REFUSÉ
+CLI-20626,Jean-Baptiste Koné,Ouagadougou,BTP / Électricité,160000,2,30,300000,REFUSÉ
+CLI-20627,Sékou Koné,Bouaké,Artisanat,563000,5,2,3025000,ACCORDÉ
+CLI-20628,Salif Sanogo,Niamey,BTP / Électricité,615000,7,8,3265000,ACCORDÉ
+CLI-20629,Kouassi Soro,Lomé,Restauration / Maquis,454000,7,3,2560000,ACCORDÉ
+CLI-20630,Ibrahim Sow,San-Pédro,Commerce Général,3245000,8,1,16605000,ACCORDÉ
+CLI-20631,Seydou Gueye,Lomé,Salarié PME,159000,2,14,615000,REFUSÉ
+CLI-20632,Sékou Sylla,Cotonou,Commerce Général,356000,5,8,1870000,REFUSÉ
+CLI-20633,Nafi Kane,Abidjan,Artisanat,2487000,8,0,12835000,ACCORDÉ
+CLI-20634,Awa Soro,Bobo-Dioulasso,BTP / Électricité,1123000,10,1,6095000,ACCORDÉ
+CLI-20635,Fatou Coulibaly,Niamey,Transport / Moto-Taxi,430000,7,3,2440000,REFUSÉ
+CLI-20636,Hawa Fofana,Lomé,Services Numériques,716000,6,2,3840000,ACCORDÉ
+CLI-20637,Awa Coulibaly,Dakar,Agriculture / Vivrier,784000,5,2,4130000,ACCORDÉ
+CLI-20638,Koffi Koffi,Lomé,Salarié PME,349000,5,8,1835000,REFUSÉ
+CLI-20639,Bintou Sylla,Lomé,Services Numériques,354000,6,3,2010000,REFUSÉ
+CLI-20640,Djeneba Fall,Niamey,Artisanat,60000,4,25,0,REFUSÉ
+CLI-20641,Clarisse Fall,Dakar,Salarié PME,380000,5,3,2090000,REFUSÉ
+CLI-20642,Aminata Barry,Abidjan,Artisanat,579000,4,2,3055000,ACCORDÉ
+CLI-20643,Ibrahim Koffi,Yamoussoukro,Transport / Moto-Taxi,2859000,9,0,14745000,ACCORDÉ
+CLI-20644,Kouassi Coulibaly,Cotonou,Restauration / Maquis,139000,4,29,315000,REFUSÉ
+CLI-20645,Amadou Ouédraogo,Abidjan,Restauration / Maquis,322000,3,29,1180000,REFUSÉ
+CLI-20646,Salif Fofana,Bobo-Dioulasso,Artisanat,578000,6,10,2990000,ACCORDÉ
+CLI-20647,Yao Ndiaye,Yamoussoukro,Agriculture / Vivrier,174000,1,14,640000,REFUSÉ
+CLI-20648,Ibrahim Touré,Ouagadougou,Transport / Moto-Taxi,476000,6,6,2560000,ACCORDÉ
+CLI-20649,Ibrahim Sangaré,Dakar,Services Numériques,523000,7,4,2885000,ACCORDÉ
+CLI-20650,Jean-Baptiste Fofana,Lomé,Agriculture / Vivrier,400000,5,3,2190000,REFUSÉ
+CLI-20651,Adama Sangaré,Yamoussoukro,Restauration / Maquis,451000,6,10,2355000,REFUSÉ
+CLI-20652,Khadija Cissé,Ouagadougou,Services Numériques,2318000,10,0,12090000,ACCORDÉ
+CLI-20653,Khadija Ouédraogo,Lomé,Agriculture / Vivrier,961000,10,0,5305000,ACCORDÉ
+CLI-20654,Bakary Sylla,Cotonou,Agriculture / Vivrier,193000,2,15,765000,REFUSÉ
+CLI-20655,Mariam Traoré,Niamey,Agriculture / Vivrier,166000,4,11,810000,REFUSÉ
+CLI-20656,Boubacar Coulibaly,Saint-Louis,Artisanat,571000,7,3,3145000,ACCORDÉ
+CLI-20657,Yao Ba,Saint-Louis,Restauration / Maquis,915000,7,1,4905000,ACCORDÉ
+CLI-20658,Bakary Sanogo,Cotonou,Artisanat,328000,4,23,1380000,REFUSÉ
+CLI-20659,Koffi Diop,Abidjan,Restauration / Maquis,413000,5,4,2235000,REFUSÉ
+CLI-20660,Jean-Baptiste Koffi,Abidjan,Restauration / Maquis,244000,2,29,740000,REFUSÉ
+CLI-20661,Khadija Bamba,Ouagadougou,Salarié PME,1984000,10,2,10380000,ACCORDÉ
+CLI-20662,Mariam Bamba,Lomé,Transport / Moto-Taxi,341000,6,8,1845000,REFUSÉ
+CLI-20663,Hawa Sow,Yamoussoukro,Agriculture / Vivrier,1506000,7,1,7860000,ACCORDÉ
+CLI-20664,Koffi Koné,San-Pédro,Agriculture / Vivrier,2567000,7,3,13125000,ACCORDÉ
+CLI-20665,Moussa Soro,Bouaké,Artisanat,380000,7,2,2210000,REFUSÉ
+CLI-20666,Khadija Ndiaye,San-Pédro,Commerce Général,2741000,9,1,14135000,ACCORDÉ
+CLI-20667,Sékou Kane,Bobo-Dioulasso,Commerce Général,1206000,8,1,6410000,ACCORDÉ
+CLI-20668,Kouassi Ba,Saint-Louis,Artisanat,713000,10,3,4005000,ACCORDÉ
+CLI-20669,Jean-Baptiste Cissé,Dakar,BTP / Électricité,3348000,8,0,17140000,ACCORDÉ
+CLI-20670,Cheikh Touré,Lomé,Salarié PME,509000,10,1,3025000,ACCORDÉ
+CLI-20671,Abdoulaye Touré,Bouaké,Commerce Général,305000,1,19,1195000,REFUSÉ
+CLI-20672,Amadou Barry,Cotonou,Salarié PME,949000,7,2,5055000,ACCORDÉ
+CLI-20673,Fanta Sangaré,Niamey,Artisanat,925000,10,3,5065000,ACCORDÉ
+CLI-20674,Mamadou Diallo,Niamey,Artisanat,2544000,7,1,13050000,ACCORDÉ
+CLI-20675,Hawa Kane,Bamako,Restauration / Maquis,642000,6,7,3370000,ACCORDÉ
+CLI-20676,Nafi Cissé,Dakar,Restauration / Maquis,280000,2,12,1260000,REFUSÉ
+CLI-20677,Aïssatou Sangaré,Abidjan,Services Numériques,3474000,8,0,17770000,ACCORDÉ
+CLI-20678,Mamadou Touré,Ouagadougou,Commerce Général,1889000,7,1,9775000,ACCORDÉ
+CLI-20679,Moussa Ndiaye,Yamoussoukro,Salarié PME,112000,4,23,300000,REFUSÉ
+CLI-20680,Salif Camara,Cotonou,Artisanat,669000,7,4,3615000,ACCORDÉ
+CLI-20681,Awa Coulibaly,Ouagadougou,Commerce Général,2597000,7,1,13315000,ACCORDÉ
+CLI-20682,Fatou Kane,Niamey,BTP / Électricité,54000,4,23,10000,REFUSÉ
+CLI-20683,Cheikh Touré,Dakar,Salarié PME,509000,5,10,2595000,ACCORDÉ
+CLI-20684,Aminata Ouédraogo,Dakar,Restauration / Maquis,179000,4,14,815000,REFUSÉ
+CLI-20685,Bintou Gueye,San-Pédro,Agriculture / Vivrier,439000,5,4,2365000,REFUSÉ
+CLI-20686,Oumar Coulibaly,Niamey,Artisanat,1306000,8,3,6870000,ACCORDÉ
+CLI-20687,Amadou Barry,Dakar,Transport / Moto-Taxi,249000,4,24,965000,REFUSÉ
+CLI-20688,Cheikh Gueye,Bamako,Transport / Moto-Taxi,2509000,7,3,12835000,ACCORDÉ
+CLI-20689,Adama Koné,Dakar,Restauration / Maquis,1676000,9,3,8770000,ACCORDÉ
+CLI-20690,Oumar Sow,Ouagadougou,Commerce Général,718000,9,1,4020000,ACCORDÉ
+CLI-20691,Cheikh Camara,Bobo-Dioulasso,Restauration / Maquis,1275000,9,3,6765000,ACCORDÉ
+CLI-20692,Aïssatou Sow,Dakar,Restauration / Maquis,557000,8,2,3145000,ACCORDÉ
+CLI-20693,Aïssatou Sangaré,San-Pédro,BTP / Électricité,639000,5,6,3325000,ACCORDÉ
+CLI-20694,Mamadou Koffi,Dakar,Services Numériques,118000,1,9,460000,REFUSÉ
+CLI-20695,Koffi Sylla,Bamako,Transport / Moto-Taxi,353000,4,10,1765000,REFUSÉ
+CLI-20696,Khadija Sow,San-Pédro,Restauration / Maquis,461000,5,2,2515000,ACCORDÉ
+CLI-20697,Ibrahim Ndiaye,Saint-Louis,Services Numériques,614000,6,9,3190000,ACCORDÉ
+CLI-20698,Adama Gueye,Niamey,Agriculture / Vivrier,2257000,7,1,11615000,ACCORDÉ
+CLI-20699,Khadija Kouadio,Lomé,Artisanat,2874000,7,1,14700000,ACCORDÉ
+CLI-20700,Sékou Sanogo,Yamoussoukro,Salarié PME,788000,4,4,4060000,ACCORDÉ
+CLI-20701,Seydou Soro,Saint-Louis,Services Numériques,670000,6,5,3550000,ACCORDÉ
+CLI-20702,Aminata Traoré,Bobo-Dioulasso,Artisanat,3422000,7,3,17400000,ACCORDÉ
+CLI-20703,Yao Gueye,Lomé,Restauration / Maquis,205000,3,25,675000,REFUSÉ
+CLI-20704,Awa Cissé,Abidjan,Transport / Moto-Taxi,556000,4,4,2900000,ACCORDÉ
+CLI-20705,Fanta Kouadio,Lomé,Artisanat,77000,2,14,205000,REFUSÉ
+CLI-20706,Salif Coulibaly,Yamoussoukro,Commerce Général,3038000,9,2,15600000,ACCORDÉ
+CLI-20707,Kouassi Gueye,San-Pédro,Restauration / Maquis,3064000,9,2,15730000,ACCORDÉ
+CLI-20708,Fatou Sylla,Cotonou,Commerce Général,1673000,8,2,8725000,ACCORDÉ
+CLI-20709,Amadou Fall,San-Pédro,Agriculture / Vivrier,650000,6,10,3350000,ACCORDÉ
+CLI-20710,Mamadou Fofana,Cotonou,Transport / Moto-Taxi,2939000,10,1,15175000,ACCORDÉ
+CLI-20711,Seydou Ouédraogo,Cotonou,Services Numériques,2509000,7,3,12835000,ACCORDÉ
+CLI-20712,Aminata Fofana,Ouagadougou,Artisanat,2557000,8,2,13145000,ACCORDÉ
+CLI-20713,Amadou Touré,Ouagadougou,Artisanat,148000,1,12,550000,REFUSÉ
+CLI-20714,Kouassi Bamba,Bouaké,Transport / Moto-Taxi,261000,1,24,875000,REFUSÉ
+CLI-20715,Ibrahim Sangaré,Bobo-Dioulasso,Commerce Général,2110000,7,0,10900000,ACCORDÉ
+CLI-20716,Clarisse Traoré,Ouagadougou,Commerce Général,850000,9,1,4680000,ACCORDÉ
+CLI-20717,Adama Barry,Abidjan,Commerce Général,105000,3,30,75000,REFUSÉ
+CLI-20718,Kouassi Ndiaye,Bouaké,Artisanat,715000,5,6,3705000,ACCORDÉ
+CLI-20719,Bakary Camara,Bamako,Artisanat,3402000,9,0,17460000,ACCORDÉ
+CLI-20720,Amadou Koné,Saint-Louis,Agriculture / Vivrier,2645000,10,1,13705000,ACCORDÉ
+CLI-20721,Amadou Ouédraogo,Bamako,Commerce Général,1118000,9,2,6000000,ACCORDÉ
+CLI-20722,Oumar Kane,Yamoussoukro,Services Numériques,108000,4,13,480000,REFUSÉ
+CLI-20723,Awa Ouédraogo,Lomé,Agriculture / Vivrier,3082000,9,0,15860000,ACCORDÉ
+CLI-20724,Aïssatou Diallo,Bobo-Dioulasso,Commerce Général,2297000,9,1,11915000,ACCORDÉ
+CLI-20725,Moussa Bamba,Yamoussoukro,Artisanat,550000,6,3,2990000,ACCORDÉ
+CLI-20726,Mariam Camara,Lomé,BTP / Électricité,90000,1,12,260000,REFUSÉ
+CLI-20727,Hawa Sylla,Cotonou,Artisanat,2373000,10,0,12365000,ACCORDÉ
+CLI-20728,Awa Koffi,San-Pédro,Services Numériques,879000,9,1,4825000,ACCORDÉ
+CLI-20729,Aminata Sanogo,Cotonou,BTP / Électricité,754000,7,7,3980000,ACCORDÉ
+CLI-20730,Ibrahim Sylla,Niamey,Transport / Moto-Taxi,2584000,10,1,13400000,ACCORDÉ
+CLI-20731,Jean-Baptiste Diallo,Saint-Louis,Services Numériques,479000,4,5,2495000,REFUSÉ
+CLI-20732,Aïssatou Traoré,Abidjan,Transport / Moto-Taxi,2487000,8,0,12835000,ACCORDÉ
+CLI-20733,Fatou Ba,Ouagadougou,BTP / Électricité,1104000,10,1,6000000,ACCORDÉ
+CLI-20734,Mamadou Ouédraogo,San-Pédro,Commerce Général,3418000,8,3,17430000,ACCORDÉ
+CLI-20735,Sékou Traoré,Cotonou,Services Numériques,944000,7,3,5010000,ACCORDÉ
+CLI-20736,Clarisse Barry,Abidjan,Artisanat,1092000,7,1,5790000,ACCORDÉ
+CLI-20737,Kouassi Traoré,Ouagadougou,Services Numériques,742000,5,10,3760000,ACCORDÉ
+CLI-20738,Djeneba Touré,Niamey,Salarié PME,715000,4,6,3655000,ACCORDÉ
+CLI-20739,Awa Diop,Yamoussoukro,Commerce Général,1228000,8,0,6540000,ACCORDÉ
+CLI-20740,Jean-Baptiste Bamba,Saint-Louis,Salarié PME,520000,6,5,2800000,ACCORDÉ
+CLI-20741,Nafi Cissé,Dakar,Restauration / Maquis,381000,5,8,1995000,REFUSÉ
+CLI-20742,Khadija Koné,Niamey,Transport / Moto-Taxi,2845000,7,3,14515000,ACCORDÉ
+CLI-20743,Bintou Sow,Niamey,Services Numériques,2058000,10,1,10770000,ACCORDÉ
+CLI-20744,Mariam Coulibaly,Dakar,Agriculture / Vivrier,1907000,7,1,9865000,ACCORDÉ
+CLI-20745,Cheikh Cissé,Dakar,Agriculture / Vivrier,546000,9,1,3160000,ACCORDÉ
+CLI-20746,Salif Ndiaye,Bamako,Commerce Général,2891000,7,3,14745000,ACCORDÉ
+CLI-20747,Fatou Koné,Dakar,BTP / Électricité,54000,3,17,80000,REFUSÉ
+CLI-20748,Jean-Baptiste Soro,Cotonou,Transport / Moto-Taxi,623000,5,3,3305000,ACCORDÉ
+CLI-20749,Bakary Bamba,Saint-Louis,Agriculture / Vivrier,128000,1,26,170000,REFUSÉ
+CLI-20750,Boubacar Sanogo,Bobo-Dioulasso,Salarié PME,69000,3,13,235000,REFUSÉ
+CLI-20751,Ibrahim Kane,Dakar,Salarié PME,98000,2,14,310000,REFUSÉ
+CLI-20752,Boubacar Kane,San-Pédro,Artisanat,2603000,9,3,13405000,ACCORDÉ
+CLI-20753,Boubacar Diop,Lomé,BTP / Électricité,2307000,7,3,11825000,ACCORDÉ
+CLI-20754,Oumar Ndiaye,Ouagadougou,Agriculture / Vivrier,771000,4,2,4015000,ACCORDÉ
+CLI-20755,Ibrahim Touré,Bouaké,Agriculture / Vivrier,1815000,8,2,9435000,ACCORDÉ
+CLI-20756,Aminata Diallo,Bobo-Dioulasso,Restauration / Maquis,874000,7,1,4700000,ACCORDÉ
+CLI-20757,Djeneba Fofana,Bouaké,Restauration / Maquis,281000,2,11,1285000,REFUSÉ
+CLI-20758,Koffi Camara,Cotonou,Commerce Général,260000,4,27,960000,REFUSÉ
+CLI-20759,Abdoulaye Kane,Bouaké,Artisanat,3119000,9,2,16005000,ACCORDÉ
+CLI-20760,Kouassi Kane,Saint-Louis,Services Numériques,294000,4,5,1570000,REFUSÉ
+CLI-20761,Djeneba Fall,Ouagadougou,Commerce Général,202000,4,13,950000,REFUSÉ
+CLI-20762,Koffi Sanogo,Bamako,Agriculture / Vivrier,2438000,7,2,12500000,ACCORDÉ
+CLI-20763,Seydou Fofana,Dakar,Salarié PME,954000,10,3,5210000,ACCORDÉ
+CLI-20764,Mamadou Sanogo,Dakar,BTP / Électricité,3034000,10,1,15650000,ACCORDÉ
+CLI-20765,Djeneba Sangaré,Dakar,Salarié PME,660000,8,3,3640000,ACCORDÉ
+CLI-20766,Ibrahim Sylla,Cotonou,Transport / Moto-Taxi,648000,4,7,3300000,ACCORDÉ
+CLI-20767,Boubacar Bamba,Bamako,Salarié PME,596000,10,2,3440000,ACCORDÉ
+CLI-20768,Mariam Sylla,Dakar,Artisanat,1648000,10,0,8740000,ACCORDÉ
+CLI-20769,Cheikh Gueye,Niamey,Salarié PME,522000,5,2,2820000,ACCORDÉ
+CLI-20770,Kouassi Bamba,Lomé,BTP / Électricité,1964000,10,3,10260000,ACCORDÉ
+CLI-20771,Bintou Fall,San-Pédro,Artisanat,3406000,10,0,17530000,ACCORDÉ
+CLI-20772,Salif Barry,Dakar,Transport / Moto-Taxi,401000,6,7,2165000,REFUSÉ
+CLI-20773,Amadou Diop,Ouagadougou,Salarié PME,581000,4,8,2945000,ACCORDÉ
+CLI-20774,Mariam Soro,Bouaké,Commerce Général,115000,4,28,215000,REFUSÉ
+CLI-20775,Koffi Coulibaly,Bamako,Commerce Général,446000,7,10,2380000,REFUSÉ
+CLI-20776,Hawa Cissé,Bamako,Services Numériques,1301000,7,2,6815000,ACCORDÉ
+CLI-20777,Clarisse Ba,Lomé,Commerce Général,313000,1,30,1015000,REFUSÉ
+CLI-20778,Bintou Sylla,Niamey,Salarié PME,1977000,10,2,10345000,ACCORDÉ
+CLI-20779,Awa Cissé,Niamey,Salarié PME,2818000,8,3,14430000,ACCORDÉ
+CLI-20780,Jean-Baptiste Touré,Yamoussoukro,Services Numériques,3102000,7,0,15860000,ACCORDÉ
+CLI-20781,Boubacar Coulibaly,Yamoussoukro,Agriculture / Vivrier,2225000,7,3,11415000,ACCORDÉ
+CLI-20782,Sékou Barry,Yamoussoukro,Agriculture / Vivrier,2937000,7,2,14995000,ACCORDÉ
+CLI-20783,Tidiane Bamba,Bamako,Transport / Moto-Taxi,649000,4,5,3345000,ACCORDÉ
+CLI-20784,Tidiane Camara,Cotonou,Agriculture / Vivrier,293000,4,28,1105000,REFUSÉ
+CLI-20785,Djeneba Sangaré,Abidjan,Services Numériques,167000,3,16,665000,REFUSÉ
+CLI-20786,Fanta Kane,Lomé,Restauration / Maquis,267000,2,8,1275000,REFUSÉ
+CLI-20787,Fanta Bamba,Abidjan,Commerce Général,2070000,9,2,10760000,ACCORDÉ
+CLI-20788,Aminata Koffi,Bamako,Services Numériques,660000,5,8,3390000,ACCORDÉ
+CLI-20789,Clarisse Koné,Ouagadougou,Services Numériques,254000,2,20,970000,REFUSÉ
+CLI-20790,Fanta Sow,Niamey,Artisanat,3478000,8,0,17790000,ACCORDÉ
+CLI-20791,Adama Koffi,Yamoussoukro,Services Numériques,339000,2,18,1435000,REFUSÉ
+CLI-20792,Mamadou Diallo,Abidjan,Agriculture / Vivrier,3137000,8,0,16085000,ACCORDÉ
+CLI-20793,Khadija Gueye,Bobo-Dioulasso,Agriculture / Vivrier,1047000,10,2,5695000,ACCORDÉ
+CLI-20794,Aminata Ouédraogo,Lomé,Transport / Moto-Taxi,1528000,10,2,8100000,ACCORDÉ
+CLI-20795,Moussa Koné,Dakar,Restauration / Maquis,62000,1,11,140000,REFUSÉ
+CLI-20796,Seydou Barry,Dakar,Agriculture / Vivrier,1598000,8,0,8390000,ACCORDÉ
+CLI-20797,Kouassi Camara,Bamako,BTP / Électricité,2559000,7,3,13085000,ACCORDÉ
+CLI-20798,Kouassi Camara,Bamako,Agriculture / Vivrier,643000,6,9,3335000,ACCORDÉ
+CLI-20799,Boubacar Cissé,Lomé,Artisanat,1249000,7,0,6595000,ACCORDÉ
+CLI-20800,Bakary Ba,Bobo-Dioulasso,Salarié PME,255000,5,10,1325000,REFUSÉ
+CLI-20801,Sékou Kouadio,Bamako,Agriculture / Vivrier,274000,5,5,1520000,REFUSÉ
+CLI-20802,Tidiane Ba,Bamako,Agriculture / Vivrier,1081000,8,0,5805000,ACCORDÉ
+CLI-20803,Sékou Gueye,Lomé,Artisanat,1335000,7,2,6985000,ACCORDÉ
+CLI-20804,Djeneba Fall,Bouaké,Restauration / Maquis,769000,7,10,3995000,ACCORDÉ
+CLI-20805,Jean-Baptiste Ndiaye,Ouagadougou,Restauration / Maquis,1678000,10,0,8890000,ACCORDÉ
+CLI-20806,Koffi Koffi,Ouagadougou,Restauration / Maquis,761000,7,9,3975000,ACCORDÉ
+CLI-20807,Nafi Barry,Cotonou,Restauration / Maquis,651000,7,5,3505000,ACCORDÉ
+CLI-20808,Koffi Ba,Yamoussoukro,BTP / Électricité,285000,2,9,1345000,REFUSÉ
+CLI-20809,Yao Kouadio,Lomé,Services Numériques,619000,7,2,3405000,ACCORDÉ
+CLI-20810,Awa Cissé,Niamey,BTP / Électricité,625000,5,3,3315000,ACCORDÉ
+CLI-20811,Mamadou Kane,Cotonou,BTP / Électricité,1818000,7,0,9440000,ACCORDÉ
+CLI-20812,Bakary Gueye,San-Pédro,Commerce Général,2451000,9,1,12685000,ACCORDÉ
+CLI-20813,Salif Diallo,Lomé,Services Numériques,478000,4,10,2390000,REFUSÉ
+CLI-20814,Mariam Gueye,Bobo-Dioulasso,Agriculture / Vivrier,271000,4,18,1195000,REFUSÉ
+CLI-20815,Clarisse Sow,Bamako,Transport / Moto-Taxi,2571000,10,0,13355000,ACCORDÉ
+CLI-20816,Mariam Bamba,Dakar,Agriculture / Vivrier,592000,7,5,3210000,ACCORDÉ
+CLI-20817,Koffi Traoré,Abidjan,Restauration / Maquis,254000,7,6,1500000,REFUSÉ
+CLI-20818,Ibrahim Sanogo,Saint-Louis,Commerce Général,70000,3,28,-60000,REFUSÉ
+CLI-20819,Amadou Diallo,Dakar,Salarié PME,267000,3,16,1165000,REFUSÉ
+CLI-20820,Bakary Ba,Dakar,Services Numériques,578000,7,2,3200000,ACCORDÉ
+CLI-20821,Jean-Baptiste Touré,Bouaké,Salarié PME,113000,3,27,175000,REFUSÉ
+CLI-20822,Awa Traoré,Abidjan,Transport / Moto-Taxi,122000,1,18,300000,REFUSÉ
+CLI-20823,Tidiane Gueye,Bamako,Services Numériques,1301000,9,0,6955000,ACCORDÉ
+CLI-20824,Abdoulaye Gueye,Lomé,Commerce Général,72000,1,9,230000,REFUSÉ
+CLI-20825,Cheikh Diallo,Cotonou,Restauration / Maquis,647000,6,4,3455000,ACCORDÉ
+CLI-20826,Abdoulaye Diop,Dakar,Salarié PME,1120000,10,3,6040000,ACCORDÉ
+CLI-20827,Moussa Coulibaly,Bobo-Dioulasso,Transport / Moto-Taxi,763000,6,7,3975000,ACCORDÉ
+CLI-20828,Hawa Sangaré,Bamako,Salarié PME,1742000,7,2,9020000,ACCORDÉ
+CLI-20829,Salif Ouédraogo,San-Pédro,Transport / Moto-Taxi,2574000,7,1,13200000,ACCORDÉ
+CLI-20830,Amadou Kane,Bouaké,Transport / Moto-Taxi,148000,4,11,720000,REFUSÉ
+CLI-20831,Bakary Ndiaye,Lomé,BTP / Électricité,411000,4,4,2175000,REFUSÉ
+CLI-20832,Oumar Ba,Bouaké,Services Numériques,319000,2,20,1295000,REFUSÉ
+CLI-20833,Mamadou Diallo,Niamey,Restauration / Maquis,1788000,7,1,9270000,ACCORDÉ
+CLI-20834,Seydou Coulibaly,Bamako,Agriculture / Vivrier,2432000,8,2,12520000,ACCORDÉ
+CLI-20835,Amadou Camara,Cotonou,Salarié PME,2808000,7,2,14350000,ACCORDÉ
+CLI-20836,Nafi Ndiaye,Niamey,Artisanat,782000,6,2,4170000,ACCORDÉ
+CLI-20837,Seydou Kouadio,Dakar,BTP / Électricité,2104000,10,1,11000000,ACCORDÉ
+CLI-20838,Cheikh Ndiaye,Ouagadougou,Services Numériques,767000,7,3,4125000,ACCORDÉ
+CLI-20839,Moussa Koné,Dakar,Transport / Moto-Taxi,722000,7,2,3920000,ACCORDÉ
+CLI-20840,Oumar Diallo,Lomé,Agriculture / Vivrier,3101000,10,3,15945000,ACCORDÉ
+CLI-20841,Jean-Baptiste Coulibaly,San-Pédro,Transport / Moto-Taxi,190000,4,14,870000,REFUSÉ
+CLI-20842,Aminata Ndiaye,Yamoussoukro,BTP / Électricité,3001000,9,0,15455000,ACCORDÉ
+CLI-20843,Awa Cissé,San-Pédro,Salarié PME,3385000,8,1,17305000,ACCORDÉ
+CLI-20844,Bakary Kane,Ouagadougou,Agriculture / Vivrier,2409000,8,0,12445000,ACCORDÉ
+CLI-20845,Moussa Camara,Cotonou,Services Numériques,1606000,7,1,8360000,ACCORDÉ
+CLI-20846,Moussa Traoré,Bouaké,BTP / Électricité,762000,5,9,3880000,ACCORDÉ
+CLI-20847,Awa Koné,Bobo-Dioulasso,Commerce Général,554000,5,10,2820000,ACCORDÉ
+CLI-20848,Yao Cissé,Dakar,Artisanat,1907000,10,3,9975000,ACCORDÉ
+CLI-20849,Sékou Ba,Yamoussoukro,Restauration / Maquis,631000,7,2,3465000,ACCORDÉ
+CLI-20850,Clarisse Ba,San-Pédro,Restauration / Maquis,2671000,10,0,13855000,ACCORDÉ
+CLI-20851,Mariam Kane,Ouagadougou,Commerce Général,165000,2,19,545000,REFUSÉ
+CLI-20852,Bintou Traoré,Bobo-Dioulasso,Transport / Moto-Taxi,701000,6,5,3705000,ACCORDÉ
+CLI-20853,Sékou Diallo,Niamey,Transport / Moto-Taxi,537000,7,10,2835000,ACCORDÉ
+CLI-20854,Aminata Kouadio,Cotonou,BTP / Électricité,2250000,9,2,11660000,ACCORDÉ
+CLI-20855,Mamadou Koné,Bobo-Dioulasso,BTP / Électricité,2408000,9,2,12450000,ACCORDÉ
+CLI-20856,Awa Traoré,Yamoussoukro,Salarié PME,3355000,8,2,17135000,ACCORDÉ
+CLI-20857,Khadija Fall,Lomé,Artisanat,317000,6,2,1845000,REFUSÉ
+CLI-20858,Seydou Koné,Lomé,Transport / Moto-Taxi,114000,1,23,160000,REFUSÉ
+CLI-20859,Cheikh Traoré,Cotonou,Services Numériques,250000,4,6,1330000,REFUSÉ
+CLI-20860,Ibrahim Ba,Saint-Louis,Restauration / Maquis,412000,4,6,2140000,REFUSÉ
+CLI-20861,Ibrahim Sangaré,Niamey,Transport / Moto-Taxi,334000,6,5,1870000,REFUSÉ
+CLI-20862,Fatou Camara,Bamako,BTP / Électricité,252000,4,20,1060000,REFUSÉ
+CLI-20863,Fanta Coulibaly,Lomé,Restauration / Maquis,431000,7,7,2365000,REFUSÉ
+CLI-20864,Boubacar Koffi,Yamoussoukro,Artisanat,512000,5,8,2650000,ACCORDÉ
+CLI-20865,Salif Ndiaye,Lomé,Restauration / Maquis,2876000,10,1,14860000,ACCORDÉ
+CLI-20866,Jean-Baptiste Bamba,Ouagadougou,Agriculture / Vivrier,578000,6,9,3010000,ACCORDÉ
+CLI-20867,Aïssatou Bamba,Niamey,Salarié PME,291000,1,25,1005000,REFUSÉ
+CLI-20868,Amadou Bamba,Ouagadougou,Agriculture / Vivrier,567000,5,10,2885000,ACCORDÉ
+CLI-20869,Aïssatou Diop,Abidjan,Restauration / Maquis,661000,5,8,3395000,ACCORDÉ
+CLI-20870,Moussa Traoré,Saint-Louis,Salarié PME,306000,4,2,1690000,REFUSÉ
+CLI-20871,Mariam Sylla,Cotonou,Agriculture / Vivrier,554000,7,7,2980000,ACCORDÉ
+CLI-20872,Tidiane Koné,San-Pédro,Agriculture / Vivrier,785000,4,5,4025000,ACCORDÉ
+CLI-20873,Yao Diop,Ouagadougou,Salarié PME,3334000,8,2,17030000,ACCORDÉ
+CLI-20874,Adama Touré,Bouaké,Commerce Général,460000,4,3,2440000,REFUSÉ
+CLI-20875,Amadou Diop,Saint-Louis,Agriculture / Vivrier,1356000,7,3,7070000,ACCORDÉ
+CLI-20876,Amadou Soro,Niamey,Salarié PME,1010000,9,3,5440000,ACCORDÉ
+CLI-20877,Bintou Cissé,Saint-Louis,Transport / Moto-Taxi,3070000,10,0,15850000,ACCORDÉ
+CLI-20878,Nafi Diop,Ouagadougou,Commerce Général,3257000,8,1,16665000,ACCORDÉ
+CLI-20879,Yao Sangaré,Bouaké,Transport / Moto-Taxi,553000,4,9,2785000,ACCORDÉ
+CLI-20880,Aïssatou Kane,Niamey,Restauration / Maquis,950000,10,3,5190000,ACCORDÉ
+CLI-20881,Clarisse Bamba,Abidjan,Artisanat,1003000,10,0,5515000,ACCORDÉ
+CLI-20882,Koffi Touré,Yamoussoukro,Commerce Général,716000,4,7,3640000,ACCORDÉ
+CLI-20883,Ibrahim Fofana,Lomé,Salarié PME,1164000,9,1,6250000,ACCORDÉ
+CLI-20884,Aïssatou Gueye,Saint-Louis,Services Numériques,3251000,8,2,16615000,ACCORDÉ
+CLI-20885,Adama Sangaré,Bouaké,BTP / Électricité,396000,6,6,2160000,REFUSÉ
+CLI-20886,Abdoulaye Sanogo,Yamoussoukro,Agriculture / Vivrier,744000,5,10,3770000,ACCORDÉ
+CLI-20887,Hawa Kane,Ouagadougou,Restauration / Maquis,615000,7,3,3365000,ACCORDÉ
+CLI-20888,Fatou Traoré,Bamako,Artisanat,945000,10,3,5165000,ACCORDÉ
+CLI-20889,Bakary Ouédraogo,Dakar,Transport / Moto-Taxi,141000,4,21,485000,REFUSÉ
+CLI-20890,Abdoulaye Diallo,Bobo-Dioulasso,Commerce Général,656000,7,3,3570000,ACCORDÉ
+CLI-20891,Hawa Ba,Ouagadougou,Commerce Général,3430000,10,3,17590000,ACCORDÉ
+CLI-20892,Ibrahim Sylla,Bamako,Transport / Moto-Taxi,2335000,9,1,12105000,ACCORDÉ
+CLI-20893,Mamadou Sangaré,Niamey,Artisanat,150000,1,26,280000,REFUSÉ
+CLI-20894,Amadou Sylla,Bamako,Agriculture / Vivrier,1089000,7,2,5755000,ACCORDÉ
+CLI-20895,Hawa Bamba,Cotonou,Agriculture / Vivrier,3193000,10,1,16445000,ACCORDÉ
+CLI-20896,Clarisse Ndiaye,Saint-Louis,Salarié PME,3094000,8,0,15870000,ACCORDÉ
+CLI-20897,Seydou Bamba,Dakar,Services Numériques,383000,6,3,2155000,REFUSÉ
+CLI-20898,Awa Camara,Abidjan,Transport / Moto-Taxi,596000,4,5,3080000,ACCORDÉ
+CLI-20899,Clarisse Touré,Niamey,Restauration / Maquis,321000,5,6,1735000,REFUSÉ
+CLI-20900,Kouassi Fall,Saint-Louis,Transport / Moto-Taxi,312000,3,20,1310000,REFUSÉ
+CLI-20901,Khadija Koné,Bobo-Dioulasso,Agriculture / Vivrier,525000,4,2,2785000,ACCORDÉ
+CLI-20902,Bakary Bamba,Bamako,Restauration / Maquis,749000,8,1,4125000,ACCORDÉ
+CLI-20903,Salif Sangaré,Yamoussoukro,BTP / Électricité,82000,2,23,50000,REFUSÉ
+CLI-20904,Kouassi Koffi,Cotonou,Commerce Général,268000,1,25,890000,REFUSÉ
+CLI-20905,Bintou Diop,San-Pédro,Restauration / Maquis,649000,10,1,3725000,ACCORDÉ
+CLI-20906,Adama Ba,Bouaké,Services Numériques,1455000,7,0,7625000,ACCORDÉ
+CLI-20907,Amadou Ndiaye,Yamoussoukro,Services Numériques,268000,7,2,1650000,REFUSÉ
+CLI-20908,Jean-Baptiste Sanogo,Niamey,Artisanat,394000,4,9,1990000,REFUSÉ
+CLI-20909,Awa Barry,Cotonou,BTP / Électricité,2330000,7,1,11980000,ACCORDÉ
+CLI-20910,Oumar Diallo,Bamako,Commerce Général,2749000,7,0,14095000,ACCORDÉ
+CLI-20911,Tidiane Sangaré,Abidjan,Transport / Moto-Taxi,1031000,10,1,5635000,ACCORDÉ
+CLI-20912,Cheikh Koné,Cotonou,BTP / Électricité,506000,6,4,2750000,ACCORDÉ
+CLI-20913,Khadija Sanogo,Yamoussoukro,Salarié PME,822000,7,2,4420000,ACCORDÉ
+CLI-20914,Salif Ndiaye,San-Pédro,Salarié PME,624000,5,9,3190000,ACCORDÉ
+CLI-20915,Djeneba Touré,Saint-Louis,BTP / Électricité,3241000,8,2,16565000,ACCORDÉ
+CLI-20916,Bakary Gueye,Abidjan,Agriculture / Vivrier,2223000,10,2,11575000,ACCORDÉ
+CLI-20917,Kouassi Ndiaye,Saint-Louis,Artisanat,2819000,8,0,14495000,ACCORDÉ
+CLI-20918,Aïssatou Sangaré,Abidjan,Artisanat,280000,4,11,1380000,REFUSÉ
+CLI-20919,Amadou Camara,Lomé,Commerce Général,2111000,9,0,11005000,ACCORDÉ
+CLI-20920,Fatou Kouadio,Bouaké,Services Numériques,2104000,10,3,10960000,ACCORDÉ
+CLI-20921,Fatou Ouédraogo,Niamey,Transport / Moto-Taxi,2308000,7,2,11850000,ACCORDÉ
+CLI-20922,Fatou Fall,Abidjan,BTP / Électricité,226000,3,26,760000,REFUSÉ
+CLI-20923,Mamadou Traoré,San-Pédro,BTP / Électricité,277000,4,9,1405000,REFUSÉ
+CLI-20924,Boubacar Coulibaly,San-Pédro,Services Numériques,200000,4,21,780000,REFUSÉ
+CLI-20925,Koffi Sangaré,Ouagadougou,Restauration / Maquis,295000,2,12,1335000,REFUSÉ
+CLI-20926,Abdoulaye Traoré,Yamoussoukro,Restauration / Maquis,94000,2,25,70000,REFUSÉ
+CLI-20927,Cheikh Sow,Abidjan,Services Numériques,629000,6,6,3325000,ACCORDÉ
+CLI-20928,Boubacar Sylla,Dakar,Commerce Général,3271000,9,2,16765000,ACCORDÉ
+CLI-20929,Tidiane Cissé,Bouaké,Salarié PME,537000,10,0,3185000,ACCORDÉ
+CLI-20930,Aïssatou Camara,Niamey,Transport / Moto-Taxi,833000,9,2,4575000,ACCORDÉ
+CLI-20931,Kouassi Fofana,Lomé,Artisanat,539000,6,9,2815000,ACCORDÉ
+CLI-20932,Ibrahim Ouédraogo,Ouagadougou,Artisanat,75000,2,11,255000,REFUSÉ
+CLI-20933,Adama Koné,Yamoussoukro,Artisanat,711000,6,2,3815000,ACCORDÉ
+CLI-20934,Salif Gueye,Abidjan,Transport / Moto-Taxi,185000,3,8,915000,REFUSÉ
+CLI-20935,Moussa Ba,Bobo-Dioulasso,Commerce Général,957000,7,3,5075000,ACCORDÉ
+CLI-20936,Awa Soro,Bamako,Agriculture / Vivrier,2892000,9,3,14850000,ACCORDÉ
+CLI-20937,Kouassi Sylla,Lomé,Services Numériques,1869000,9,2,9755000,ACCORDÉ
+CLI-20938,Nafi Sylla,Bouaké,BTP / Électricité,204000,1,13,810000,REFUSÉ
+CLI-20939,Aïssatou Koné,Ouagadougou,Restauration / Maquis,63000,1,27,-175000,REFUSÉ
+CLI-20940,Mamadou Sow,Bamako,BTP / Électricité,2943000,7,1,15045000,ACCORDÉ
+CLI-20941,Jean-Baptiste Sylla,Dakar,Agriculture / Vivrier,167000,4,25,535000,REFUSÉ
+CLI-20942,Sékou Coulibaly,Bobo-Dioulasso,Commerce Général,799000,7,7,4205000,ACCORDÉ
+CLI-20943,Mariam Ndiaye,Bamako,Restauration / Maquis,2018000,8,3,10430000,ACCORDÉ
+CLI-20944,Bakary Sangaré,San-Pédro,Agriculture / Vivrier,2219000,9,0,11545000,ACCORDÉ
+CLI-20945,Aïssatou Fall,Cotonou,Agriculture / Vivrier,491000,7,8,2645000,ACCORDÉ
+CLI-20946,Oumar Koffi,Saint-Louis,Artisanat,2209000,8,2,11405000,ACCORDÉ
+CLI-20947,Boubacar Touré,Cotonou,BTP / Électricité,2213000,10,1,11545000,ACCORDÉ
+CLI-20948,Koffi Camara,Ouagadougou,Transport / Moto-Taxi,58000,2,11,170000,REFUSÉ
+CLI-20949,Nafi Kouadio,San-Pédro,Salarié PME,642000,10,0,3710000,ACCORDÉ
+CLI-20950,Djeneba Cissé,Ouagadougou,Agriculture / Vivrier,656000,7,7,3490000,ACCORDÉ
+CLI-20951,Ibrahim Sanogo,San-Pédro,Transport / Moto-Taxi,1912000,9,0,10010000,ACCORDÉ
+CLI-20952,Sékou Koné,San-Pédro,Agriculture / Vivrier,285000,4,28,1065000,REFUSÉ
+CLI-20953,Seydou Sangaré,Lomé,Services Numériques,391000,5,10,2005000,REFUSÉ
+CLI-20954,Kouassi Diop,Bobo-Dioulasso,Commerce Général,725000,7,7,3835000,ACCORDÉ
+CLI-20955,Seydou Cissé,Dakar,Restauration / Maquis,2569000,9,0,13295000,ACCORDÉ
+CLI-20956,Koffi Soro,Lomé,Services Numériques,1836000,8,1,9560000,ACCORDÉ
+CLI-20957,Fatou Sangaré,Niamey,Transport / Moto-Taxi,579000,4,7,2955000,ACCORDÉ
+CLI-20958,Cheikh Cissé,Lomé,Agriculture / Vivrier,2340000,8,1,12080000,ACCORDÉ
+CLI-20959,Cheikh Kouadio,Bamako,Agriculture / Vivrier,397000,4,5,2085000,REFUSÉ
+CLI-20960,Salif Soro,Abidjan,Artisanat,291000,5,2,1665000,REFUSÉ
+CLI-20961,Bintou Traoré,Bamako,BTP / Électricité,2895000,10,3,14915000,ACCORDÉ
+CLI-20962,Yao Diop,Lomé,Salarié PME,112000,4,21,340000,REFUSÉ
+CLI-20963,Bintou Kouadio,Ouagadougou,Agriculture / Vivrier,111000,3,10,505000,REFUSÉ
+CLI-20964,Sékou Ouédraogo,Cotonou,Agriculture / Vivrier,1906000,9,3,9920000,ACCORDÉ
+CLI-20965,Adama Sangaré,San-Pédro,Agriculture / Vivrier,290000,7,3,1740000,REFUSÉ
+CLI-20966,Abdoulaye Gueye,Bamako,BTP / Électricité,68000,1,15,90000,REFUSÉ
+CLI-20967,Ibrahim Koffi,Bamako,Services Numériques,528000,7,4,2910000,ACCORDÉ
+CLI-20968,Bintou Cissé,Lomé,Salarié PME,3162000,7,1,16140000,ACCORDÉ
+CLI-20969,Amadou Bamba,Bouaké,Agriculture / Vivrier,468000,5,2,2550000,ACCORDÉ
+CLI-20970,Nafi Gueye,Bobo-Dioulasso,Restauration / Maquis,2949000,8,2,15105000,ACCORDÉ
+CLI-20971,Bintou Soro,Lomé,Artisanat,203000,4,23,755000,REFUSÉ
+CLI-20972,Boubacar Sylla,Bobo-Dioulasso,Services Numériques,2517000,9,0,13035000,ACCORDÉ
+CLI-20973,Oumar Coulibaly,Niamey,Restauration / Maquis,220000,2,29,620000,REFUSÉ
+CLI-20974,Nafi Coulibaly,Bouaké,Artisanat,109000,3,30,95000,REFUSÉ
+CLI-20975,Jean-Baptiste Gueye,Bouaké,Artisanat,306000,4,29,1150000,REFUSÉ
+CLI-20976,Oumar Traoré,Lomé,Restauration / Maquis,678000,4,10,3390000,ACCORDÉ
+CLI-20977,Hawa Sow,Yamoussoukro,Restauration / Maquis,2141000,10,3,11145000,ACCORDÉ
+CLI-20978,Jean-Baptiste Kouadio,Lomé,Commerce Général,479000,6,2,2655000,ACCORDÉ
+CLI-20979,Cheikh Fofana,Bamako,Services Numériques,424000,5,3,2310000,REFUSÉ
+CLI-20980,Khadija Barry,Ouagadougou,BTP / Électricité,270000,4,8,1390000,REFUSÉ
+CLI-20981,Kouassi Gueye,Cotonou,BTP / Électricité,316000,4,10,1580000,REFUSÉ
+CLI-20982,Mamadou Ba,Ouagadougou,Transport / Moto-Taxi,257000,2,17,1045000,REFUSÉ
+CLI-20983,Boubacar Cissé,Cotonou,BTP / Électricité,2819000,8,0,14495000,ACCORDÉ
+CLI-20984,Fatou Traoré,Saint-Louis,Agriculture / Vivrier,2533000,7,1,12995000,ACCORDÉ
+CLI-20985,Cheikh Touré,Bamako,Commerce Général,509000,4,6,2625000,ACCORDÉ
+CLI-20986,Sékou Coulibaly,Yamoussoukro,Services Numériques,1632000,7,0,8510000,ACCORDÉ
+CLI-20987,Kouassi Soro,Abidjan,Services Numériques,2772000,8,0,14260000,ACCORDÉ
+CLI-20988,Sékou Koffi,Bamako,Services Numériques,213000,3,21,795000,REFUSÉ
+CLI-20989,Yao Sangaré,Lomé,Commerce Général,1350000,7,2,7060000,ACCORDÉ
+CLI-20990,Adama Koffi,Niamey,Salarié PME,890000,8,3,4790000,ACCORDÉ
+CLI-20991,Salif Kouadio,Lomé,Salarié PME,329000,2,20,1345000,REFUSÉ
+CLI-20992,Amadou Camara,Cotonou,Services Numériques,363000,7,5,2065000,REFUSÉ
+CLI-20993,Koffi Traoré,Bamako,Services Numériques,2499000,7,2,12805000,ACCORDÉ
+CLI-20994,Bakary Diop,Dakar,Agriculture / Vivrier,467000,7,5,2585000,ACCORDÉ
+CLI-20995,Kouassi Diop,Bobo-Dioulasso,Services Numériques,324000,2,9,1540000,REFUSÉ
+CLI-20996,Hawa Camara,Niamey,Restauration / Maquis,1917000,8,0,9985000,ACCORDÉ
+CLI-20997,Bakary Gueye,Abidjan,Services Numériques,1377000,10,3,7325000,ACCORDÉ
+CLI-20998,Bakary Sylla,Cotonou,Transport / Moto-Taxi,756000,4,3,3920000,ACCORDÉ
+CLI-20999,Nafi Gueye,Niamey,Agriculture / Vivrier,557000,8,0,3185000,ACCORDÉ
+CLI-21000,Aminata Ndiaye,Dakar,Salarié PME,2279000,10,1,11875000,ACCORDÉ
