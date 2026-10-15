@@ -79,10 +79,9 @@ class PaillierScheme:
 
 
 if __name__ == "__main__":
-    # Test de justesse rapide : le résultat chiffré doit correspondre
-    # exactement au calcul en clair.
+    # Test de justesse rapide avec transactions signées (débits/crédits)
     scheme = PaillierScheme()
-    valeurs = [100, 250, 75, 1000, 300]
+    valeurs = [100, -250, 75, 1000, -300]
 
     chiffres = scheme.chiffrer(valeurs)
     somme_dechiffree = scheme.dechiffrer(scheme.somme_homomorphe(chiffres))
@@ -93,5 +92,5 @@ if __name__ == "__main__":
     )
     assert moyenne == sum(valeurs) / len(valeurs), f"Écart moyenne : {moyenne}"
 
-    print(f"[OK] Somme chiffrée puis déchiffrée : {somme_dechiffree} (attendu {sum(valeurs)})")
-    print(f"[OK] Moyenne : {moyenne}")
+    print(f"[OK] Paillier - Somme chiffrée puis déchiffrée : {somme_dechiffree} (attendu {sum(valeurs)})")
+    print(f"[OK] Paillier - Moyenne : {moyenne}")

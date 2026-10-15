@@ -216,6 +216,7 @@ Pour un déploiement pas-à-pas en production sur une instance AWS EC2 (Ubuntu 2
 ## 📚 Documentation & Guides Détaillés
 
 * 📘 **[GUIDE_INGENIEUR_ET_ARCHITECTURE.md](GUIDE_INGENIEUR_ET_ARCHITECTURE.md)** : Référence complète d'architecture logicielle, flux de données, modèles de menaces (*Threat Model*), règles d'or cryptographiques et workflow de contribution.
+* 🐳 **[PROCEDURE_DOCKER_UBUNTU.md](PROCEDURE_DOCKER_UBUNTU.md)** : Guide rapide de déploiement Docker sur machine virtuelle Ubuntu.
 * 🚀 **[DEPLOYMENT.md](DEPLOYMENT.md)** : Manuel complet d'installation et de déploiement (Local, Docker, AWS EC2).
 
 ---

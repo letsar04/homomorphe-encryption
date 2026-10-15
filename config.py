@@ -11,10 +11,13 @@ import math
 SEED = 42
 
 # --- Données synthétiques (points 1, 2, 3, 4 — Partie II) ---
-NB_TRANSACTIONS = 5000          # volume du jeu de données
-MONTANT_MIN = 0                 # FCFA, entiers pour éviter les problèmes
-MONTANT_MAX = 10_000_000        # FCFA  de précision en HE (point 2)
-NB_COMPTES = 200                # comptes/clients simulés (point 4)
+NB_TRANSACTIONS = 10_000        # volume complet du jeu de données (échelles 10, 100, 1000, 10000)
+MONTANT_MIN = 1_000             # FCFA, montant unitaire minimum
+MONTANT_MAX = 10_000_000        # FCFA, montant unitaire maximum
+NB_COMPTES = 200                # comptes/clients bancaires simulés
+
+# --- Échelles de benchmark (Chapitre III du mémoire) ---
+TIERS_BENCHMARK = [10, 100, 1_000, 10_000]
 
 # --- Paillier (point 5, Partie II) ---
 PAILLIER_KEY_SIZE = 2048             # bits, standard historique de transition (112 bits de sécurité)
@@ -23,17 +26,19 @@ PAILLIER_KEY_SIZE_128BIT = 3072      # bits, standard recommandé NIST (128 bits
 # --- BFV (point 6, Partie II) ---
 BFV_POLY_MODULUS_DEGREE = 8192
 BFV_SECURITY_LEVEL = 128             # bits, niveau de sécurité Homomorphic Encryption Standard (RLWE)
+BFV_SLOTS = BFV_POLY_MODULUS_DEGREE  # 8192 créneaux (slots) pour le batching SIMD
 
-# plain_modulus calibré selon l'exemple de la note technique :
-# t doit être > somme maximale théorique (NB_TRANSACTIONS * MONTANT_MAX).
-# Pyfhel génère un nombre premier valide respectant t ≡ 1 mod 2n à partir
-# du nombre de bits demandé — on calcule ce nombre de bits directement
-# depuis la plage de valeurs retenue, avec une marge de sécurité de 2 bits.
+# plain_modulus calibré pour supporter les transactions signées (débits/crédits)
+# sur l'échelle maximale N = 10 000 avec montants jusqu'à 10 000 000 FCFA.
+# Plage théorique [-S_max, +S_max] => t doit être > 2 * S_max.
+# On applique une marge de sécurité de 3 bits pour garantir l'absence de wrap-around modulaire.
 _SOMME_MAX_THEORIQUE = NB_TRANSACTIONS * MONTANT_MAX
-BFV_PLAIN_MODULUS_BITS = math.ceil(math.log2(_SOMME_MAX_THEORIQUE)) + 2
+_PLAGE_THEORIQUE = 2 * _SOMME_MAX_THEORIQUE
+BFV_PLAIN_MODULUS_BITS = max(math.ceil(math.log2(_PLAGE_THEORIQUE)) + 3, 41)
 
 # --- Benchmarks (point 12, Partie II) ---
 NB_REPETITIONS = 30             # répétitions par mesure pour lisser le bruit
+NB_REPETITIONS_RAPIDE = 5       # mode rapide pour validation fonctionnelle
 
 # --- Chemins ---
 DATA_DIR = "data"

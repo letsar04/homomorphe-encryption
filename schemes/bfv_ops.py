@@ -29,21 +29,80 @@ class BFVScheme:
         self.he.keyGen()
 
     def chiffrer(self, valeurs):
-        """Chiffre une liste d'entiers. Retourne une liste de PyCtxt."""
+        """Chiffre une liste d'entiers en mode scalaire (1 ciphertext par valeur). Retourne une liste de PyCtxt."""
         return [self.he.encryptInt(np.array([int(v)], dtype=np.int64)) for v in valeurs]
 
+    def activer_simd(self):
+        """Génère les clés de rotation Galois pour les opérations de batching SIMD."""
+        if not hasattr(self, "_rotate_key_ready") or not self._rotate_key_ready:
+            self.he.rotateKeyGen()
+            self._rotate_key_ready = True
+
+    def chiffrer_simd(self, valeurs):
+        """
+        Chiffrement vectorisé SIMD (Batching) conforme à QR4 du Chapitre III.
+        Regroupe jusqu'à n=8192 entiers par ciphertext.
+        Pour N > n (ex: 10 000), produit math.ceil(N / n) ciphertexts.
+        """
+        n_slots = self.poly_modulus_degree
+        valeurs_list = list(valeurs)
+        ciphers = []
+        for i in range(0, len(valeurs_list), n_slots):
+            chunk = valeurs_list[i:i + n_slots]
+            arr = np.zeros(n_slots, dtype=np.int64)
+            arr[:len(chunk)] = chunk
+            ciphers.append(self.he.encryptInt(arr))
+        return ciphers
+
     def somme_homomorphe(self, chiffres):
-        """Additionne des valeurs chiffrées (opération native BFV)."""
+        """Additionne des valeurs chiffrées en mode scalaire (opération native BFV)."""
         resultat = chiffres[0].copy()
         for c in chiffres[1:]:
             resultat += c
         return resultat
 
+    def somme_homomorphe_simd(self, chiffres_batch):
+        """
+        Somme totale intra- et inter-vecteurs SIMD (réduction par cumul_add).
+        Retourne le ciphertext contenant la somme totale dans son premier créneau (slot 0).
+        """
+        self.activer_simd()
+        if not chiffres_batch:
+            raise ValueError("Liste de ciphertexts SIMD vide")
+
+        sommes_partielles = []
+        for ct in chiffres_batch:
+            ct_copy = ct.copy()
+            self.he.cumul_add(ct_copy)
+            sommes_partielles.append(ct_copy)
+
+        res = sommes_partielles[0]
+        for sp in sommes_partielles[1:]:
+            res += sp
+        return res
+
     def dechiffrer(self, chiffre):
-        """Déchiffre un PyCtxt (ou une liste)."""
+        """Déchiffre un PyCtxt scalaire (ou une liste)."""
         if isinstance(chiffre, list):
             return [int(self.he.decryptInt(c)[0]) for c in chiffre]
         return int(self.he.decryptInt(chiffre)[0])
+
+    def dechiffrer_simd(self, chiffre_batch, extraire_somme=True):
+        """
+        Déchiffre un ou plusieurs ciphertexts SIMD.
+        Si extraire_somme=True, extrait la somme totale (slot 0).
+        Sinon retourne le tableau complet des créneaux décodés.
+        """
+        if isinstance(chiffre_batch, list):
+            res_list = [self.he.decryptInt(c) for c in chiffre_batch]
+            if extraire_somme:
+                return sum(int(r[0]) for r in res_list)
+            return np.concatenate(res_list)
+
+        res = self.he.decryptInt(chiffre_batch)
+        if extraire_somme:
+            return int(res[0])
+        return res
 
     def moyenne(self, chiffres):
         """
@@ -54,6 +113,12 @@ class BFVScheme:
         somme_chiffree = self.somme_homomorphe(chiffres)
         somme_claire = self.dechiffrer(somme_chiffree)
         return somme_claire / n
+
+    def moyenne_simd(self, chiffres_batch, nb_valeurs):
+        """Calcule la moyenne en mode SIMD : somme homomorphe vectorielle, déchiffrement, division par n."""
+        somme_chiffree = self.somme_homomorphe_simd(chiffres_batch)
+        somme_claire = self.dechiffrer_simd(somme_chiffree, extraire_somme=True)
+        return somme_claire / nb_valeurs
 
     @staticmethod
     def serialiser_chiffre(chiffre):
@@ -83,22 +148,29 @@ class BFVScheme:
 
 
 if __name__ == "__main__":
-    # Test de justesse rapide. Si BFV_PLAIN_MODULUS_BITS est mal calibré
-    # par rapport à la somme réelle, ce test échouera avec un résultat
-    # incohérent (wrap-around silencieux, cf. note technique section 1.2)
-    # plutôt qu'une erreur explicite — d'où l'intérêt de ce test.
+    # Test de justesse rapide (Scalaire & SIMD) avec valeurs signées (débits/crédits)
     scheme = BFVScheme()
-    valeurs = [100, 250, 75, 1000, 300]
+    valeurs = [100, -250, 75, 1000, -300]
 
+    # 1. Test Scalaire
     chiffres = scheme.chiffrer(valeurs)
     somme_dechiffree = scheme.dechiffrer(scheme.somme_homomorphe(chiffres))
     moyenne = scheme.moyenne(chiffres)
 
     assert somme_dechiffree == sum(valeurs), (
-        f"Écart somme : {somme_dechiffree} vs {sum(valeurs)} "
-        f"(vérifier BFV_PLAIN_MODULUS_BITS dans config.py)"
+        f"Écart somme scalaire : {somme_dechiffree} vs {sum(valeurs)}"
     )
-    assert moyenne == sum(valeurs) / len(valeurs), f"Écart moyenne : {moyenne}"
+    assert moyenne == sum(valeurs) / len(valeurs), f"Écart moyenne scalaire : {moyenne}"
+    print(f"[OK] Scalaire - Somme : {somme_dechiffree} (attendu {sum(valeurs)}) | Moyenne : {moyenne}")
 
-    print(f"[OK] Somme chiffrée puis déchiffrée : {somme_dechiffree} (attendu {sum(valeurs)})")
-    print(f"[OK] Moyenne : {moyenne}")
+    # 2. Test SIMD Vectorisé (Batching)
+    chiffres_simd = scheme.chiffrer_simd(valeurs)
+    somme_simd_ct = scheme.somme_homomorphe_simd(chiffres_simd)
+    somme_simd_res = scheme.dechiffrer_simd(somme_simd_ct, extraire_somme=True)
+    moyenne_simd_res = scheme.moyenne_simd(chiffres_simd, len(valeurs))
+
+    assert somme_simd_res == sum(valeurs), (
+        f"Écart somme SIMD : {somme_simd_res} vs {sum(valeurs)}"
+    )
+    assert moyenne_simd_res == sum(valeurs) / len(valeurs), f"Écart moyenne SIMD : {moyenne_simd_res}"
+    print(f"[OK] SIMD     - Somme : {somme_simd_res} (attendu {sum(valeurs)}) | Moyenne : {moyenne_simd_res}")
