@@ -76,45 +76,109 @@
         <!-- SECTION 1: Importation des Données -->
         <section class="card step-section active" id="section1">
             <div class="card-header">
-                <h2>Étape 1 : Chargement des Données Financières</h2>
-                <p>Uploadez votre fichier CSV de données bancaires ou générez un jeu de données synthétique adapté au contexte Mobile Money / Banque.</p>
+                <h2>Étape 1 : Chargement &amp; Génération des Données Financières</h2>
+                <p>Uploadez votre fichier CSV, utilisez nos presets bancaires ou <strong>générez des données synthétiques sur-mesure</strong> selon votre cas d'usage (Mobile Money / Banque / BCEAO).</p>
             </div>
             <div class="card-body">
                 <div class="grid-2col">
-                    <!-- Dropzone -->
-                    <div class="dropzone" id="dropzone">
-                        <svg class="dropzone-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="17 8 12 3 7 8"></polyline>
-                            <line x1="12" y1="3" x2="12" y2="15"></line>
-                        </svg>
-                        <p class="dropzone-title">Glissez-déposez votre fichier CSV ici</p>
-                        <p class="dropzone-sub">ou cliquez pour parcourir vos fichiers</p>
-                        <input type="file" id="csvFileInput" accept=".csv" class="file-input">
+                    <!-- Dropzone & Presets -->
+                    <div>
+                        <!-- Dropzone -->
+                        <div class="dropzone" id="dropzone" style="margin-bottom: 18px;">
+                            <svg class="dropzone-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            <p class="dropzone-title">Glissez-déposez un fichier CSV ici</p>
+                            <p class="dropzone-sub">ou cliquez pour importer depuis votre poste</p>
+                            <input type="file" id="csvFileInput" accept=".csv" class="file-input">
+                        </div>
+
+                        <!-- Presets -->
+                        <div class="preset-box">
+                            <h3>⚡ Jeux de Données Prédéfinis</h3>
+                            <div class="button-group">
+                                <button class="btn btn-outline" id="btnLoadMicrocredit">
+                                    📱 Profils Micro-Crédit (50 Clients)
+                                </button>
+                                <button class="btn btn-outline" id="btnLoadAgios">
+                                    🏦 Soldes Agios 30 Jours (20 Comptes)
+                                </button>
+                                <button class="btn btn-outline" id="btnLoadTransactions">
+                                    💳 100 Transactions Synthétiques (FCFA)
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Presets & Quick Load -->
-                    <div class="preset-box">
-                        <h3>Jeux de Données de Démonstration</h3>
-                        <p>Sélectionnez un cas d'usage financier pré-configuré :</p>
-                        <div class="button-group">
-                            <button class="btn btn-outline" id="btnLoadMicrocredit">
-                                📱 Profils Micro-Crédit Mobile Money (50 Clients)
-                            </button>
-                            <button class="btn btn-outline" id="btnLoadAgios">
-                                🏦 Soldes Journaliers Bancaires (30 Jours)
-                            </button>
-                            <button class="btn btn-outline" id="btnLoadTransactions">
-                                💳 100 Transactions Synthétiques (FCFA)
+                    <!-- Custom Synthetic Data Generator Panel -->
+                    <div class="data-generator-panel">
+                        <div class="generator-header">
+                            <div class="gen-badge">NOUVEAU</div>
+                            <h3>⚙️ Générateur Synthétique Paramétrable</h3>
+                            <p>Configurez la volumétrie et les bornes financières pour générer un jeu de données conforme au Chapitre III.</p>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 12px;">
+                            <label class="form-label">Type de Données à Générer :</label>
+                            <select class="form-select" id="genDataType">
+                                <option value="transactions" selected>Transactions Bancaires Multi-Comptes (Crédits &amp; Débits signés)</option>
+                                <option value="microcredit">Profils Clients Mobile Money (Volume, Régularité, Retards)</option>
+                                <option value="agios">Soldes Quotidiens pour Calcul d'Agios (Taux BCEAO 5%)</option>
+                            </select>
+                        </div>
+
+                        <div class="grid-2col" style="gap: 12px; margin-top: 10px;">
+                            <div class="form-group">
+                                <label class="form-label">Quantité de Lignes (N) :</label>
+                                <input type="number" id="genNbRows" class="form-input" min="5" max="10000" value="100">
+                                <div class="quick-chips" style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap;">
+                                    <button type="button" class="chip-btn" data-n="10">10</button>
+                                    <button type="button" class="chip-btn" data-n="50">50</button>
+                                    <button type="button" class="chip-btn active" data-n="100">100</button>
+                                    <button type="button" class="chip-btn" data-n="500">500</button>
+                                    <button type="button" class="chip-btn" data-n="1000">1 000</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Graine Aléatoire (Seed) :</label>
+                                <input type="number" id="genSeed" class="form-input" value="42">
+                                <small style="color: var(--text-secondary); font-size: 11px;">Garantit la reproductibilité scientifique.</small>
+                            </div>
+                        </div>
+
+                        <div class="grid-2col" style="gap: 12px; margin-top: 10px;">
+                            <div class="form-group">
+                                <label class="form-label">Montant Min (FCFA) :</label>
+                                <input type="number" id="genMontantMin" class="form-input" value="5000" step="1000">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Montant Max (FCFA) :</label>
+                                <input type="number" id="genMontantMax" class="form-input" value="500000" step="10000">
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="genRatioCreditGroup" style="margin-top: 10px;">
+                            <label class="form-label">Ratio Flux Crédits vs Débits : <span id="lblRatioCredit">55%</span> crédits</label>
+                            <input type="range" id="genRatioCredit" class="form-range" min="10" max="90" value="55" style="width: 100%;">
+                        </div>
+
+                        <div style="margin-top: 16px;">
+                            <button class="btn btn-primary" id="btnGenererDonnees" style="width: 100%;">
+                                ✨ Générer le Jeu de Données Personnalisé
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Data Preview Table -->
-                <div class="preview-container hidden" id="previewContainer">
+                <div class="preview-container hidden" id="previewContainer" style="margin-top: 24px;">
                     <div class="preview-header">
-                        <h3>Aperçu des Données en Clair (<span id="dataRowCount">0</span> lignes chargées)</h3>
+                        <div>
+                            <h3>Aperçu des Données en Clair (<span id="dataRowCount">0</span> lignes chargées)</h3>
+                            <div id="dataSummaryStats" style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;"></div>
+                        </div>
                         <span class="badge badge-info" id="dataSummaryBadge">Prêt pour chiffrement</span>
                     </div>
                     <div class="table-responsive">
@@ -125,37 +189,44 @@
                     </div>
                     <div class="action-footer">
                         <button class="btn btn-primary" id="btnGoToStep2">
-                            Poursuivre vers la Configuration Cryptographique &rarr;
+                            Poursuivre vers la Configuration Cryptographique &amp; Expérimentale &rarr;
                         </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 2: Configuration Cryptographique -->
+        <!-- SECTION 2: Configuration Cryptographique & Expérimentale -->
         <section class="card step-section hidden" id="section2">
             <div class="card-header">
-                <h2>Étape 2 : Choix du Schéma Homomorphe & Opération</h2>
-                <p>Configurez les paramètres cryptographiques pour le traitement des données sur le Cloud distant.</p>
+                <h2>Étape 2 : Configuration Cryptographique &amp; Protocole d'Expérimentation</h2>
+                <p>Définissez le schéma homomorphe, l'opération financière, la volumétrie de test, les répétitions et <strong>sélectionnez les métriques exactes</strong> à évaluer sur AWS EC2.</p>
             </div>
             <div class="card-body">
                 <div class="grid-2col">
                     <!-- Scheme Selector -->
                     <div class="form-group">
-                        <label class="form-label">Sélectionner le Schéma de Chiffrement Homomorphe :</label>
+                        <label class="form-label">1. Schéma de Chiffrement Homomorphe :</label>
                         <div class="radio-card-group">
                             <label class="radio-card">
                                 <input type="radio" name="scheme" value="paillier" checked>
                                 <div class="radio-card-content">
-                                    <div class="radio-title">Paillier (PHE)</div>
-                                    <div class="radio-desc">Chiffrement Homomorphe Partiel. Idéal pour les additions homomorphes et multiplications par scalaires. Clé 2048-bit.</div>
+                                    <div class="radio-title">Paillier (PHE 2048-bit)</div>
+                                    <div class="radio-desc">Chiffrement Homomorphe Partiel. Idéal pour additions &amp; multiplications scalaires directes. Très léger.</div>
                                 </div>
                             </label>
                             <label class="radio-card">
                                 <input type="radio" name="scheme" value="bfv">
                                 <div class="radio-card-content">
-                                    <div class="radio-title">BFV (Pyfhel / SEAL)</div>
-                                    <div class="radio-desc">Chiffrement Homomorphe Somme Toute (FHE). Permet des opérations modulaires complexes. Degré 8192.</div>
+                                    <div class="radio-title">BFV Scalaire (SEAL / Pyfhel)</div>
+                                    <div class="radio-desc">Chiffrement Homomorphe Somme Toute (FHE). Sécurité RLWE post-quantique 128 bits. Degré n=8192.</div>
+                                </div>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="scheme" value="bfv_simd">
+                                <div class="radio-card-content">
+                                    <div class="radio-title">BFV SIMD Batché (Vectoriel)</div>
+                                    <div class="radio-desc">Batching SIMD jusqu'à 8 192 valeurs par ciphertext unique. Idéal pour les gros volumes N.</div>
                                 </div>
                             </label>
                         </div>
@@ -163,22 +234,144 @@
 
                     <!-- Operation Selector -->
                     <div class="form-group">
-                        <label class="form-label">Opération Financière à Exécuter :</label>
+                        <label class="form-label">2. Type d'Opération Financière à Exécuter :</label>
                         <select class="form-select" id="selectOperation">
+                            <option value="somme" selected>Somme Homomorphe Totale des Montants (FCFA)</option>
+                            <option value="moyenne">Moyenne Homomorphe (Option A : Déchiffrement somme / N)</option>
                             <option value="microcredit">Score de Micro-Crédit Mobile Money (Formule Pondérée)</option>
-                            <option value="agios">Calcul d'Agios & Intérêts sur Soldes Journaliers</option>
-                            <option value="somme">Somme Homomorphe Totale des Montants (FCFA)</option>
+                            <option value="agios">Calcul d'Agios &amp; Intérêts Bancaires (Prorata Temporis)</option>
+                            <option value="scalaire">Multiplication Scalaire / Taxe &amp; TVA (Application directe)</option>
                         </select>
-                        <div class="info-callout" id="operationCallout">
-                            <strong>Formule du Score :</strong> Score = (5 &times; Vol_Tx) + (50 000 &times; Régularité) - (20 000 &times; Retards).
+
+                        <div class="info-callout" id="operationCallout" style="margin-top: 14px;">
+                            <strong>Formule Somme Homomorphe :</strong> Somme = &sum;(Montants_Transactions).
+                        </div>
+
+                        <!-- Paramètre supplémentaire pour opération scalaire si choisie -->
+                        <div id="scalarConfigRow" class="hidden" style="margin-top: 14px; background: rgba(59, 130, 246, 0.05); padding: 12px; border-radius: 8px; border: 1px dashed var(--border-color);">
+                            <label class="form-label" style="font-size: 13px;">Facteur Scalaire Appliqué (ex: 118 pour TVA 18%) :</label>
+                            <input type="number" id="scalarFactorInput" class="form-input" value="118" style="max-width: 180px;">
                         </div>
                     </div>
                 </div>
 
-                <div class="action-footer">
-                    <button class="btn btn-secondary" id="btnBackToStep1">&larr; Retour</button>
-                    <button class="btn btn-primary" id="btnStartEncryption">
-                        Chiffrer et Transmettre au Cloud AWS &rarr;
+                <!-- Experiment Parameters: Data Scale and Repetitions -->
+                <div class="secu-config-panel" style="margin-top: 24px; padding: 18px;">
+                    <h3 style="font-size: 15px; margin-bottom: 12px; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+                        <span>🔬 3. Paramètres de l'Expérimentation &amp; Répétitions</span>
+                    </h3>
+                    <div class="grid-2col">
+                        <div class="form-group">
+                            <label class="form-label">Quantité de Données pour le Test (N transactions) :</label>
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <input type="number" id="expNbTransactions" class="form-input" min="5" max="10000" value="50" style="max-width: 150px;">
+                                <div class="quick-chips" style="display: flex; gap: 6px;">
+                                    <button type="button" class="chip-exp-btn" data-val="10">10</button>
+                                    <button type="button" class="chip-exp-btn active" data-val="50">50</button>
+                                    <button type="button" class="chip-exp-btn" data-val="100">100</button>
+                                    <button type="button" class="chip-exp-btn" data-val="500">500</button>
+                                    <button type="button" class="chip-exp-btn" data-val="1000">1 000</button>
+                                </div>
+                            </div>
+                            <small style="color: var(--text-secondary); font-size: 11px; margin-top: 4px; display: block;">Échelle de test sous laquelle les opérations chiffrées seront traitées.</small>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Nombre de Répétitions (Lissage statistique du bruit) :</label>
+                            <select class="form-select" id="expNbRepetitions">
+                                <option value="1">1 répétition (Exécution ultra-rapide)</option>
+                                <option value="3" selected>3 répétitions (Recommandé pour évaluation moyenne &amp; écart-type)</option>
+                                <option value="5">5 répétitions (Haute précision)</option>
+                                <option value="10">10 répétitions (Benchmark approfondi)</option>
+                            </select>
+                            <small style="color: var(--text-secondary); font-size: 11px; margin-top: 4px; display: block;">Permet de calculer automatiquement la moyenne et l'écart-type &sigma;.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checkbox Group: Selectable Metrics to Measure -->
+                <div class="secu-config-panel" style="margin-top: 20px; padding: 18px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <h3 style="font-size: 15px; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+                            <span>📋 4. Métriques et Résultats à Mesurer</span>
+                        </h3>
+                        <div style="display: flex; gap: 10px;">
+                            <button type="button" class="btn btn-outline" id="btnSelectAllMetrics" style="padding: 4px 10px; font-size: 12px;">Tout Cocher</button>
+                            <button type="button" class="btn btn-outline" id="btnDeselectAllMetrics" style="padding: 4px 10px; font-size: 12px;">Désélectionner Tout</button>
+                        </div>
+                    </div>
+                    <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 14px;">Cochez les métriques cryptographiques, matérielles et réseaux que vous souhaitez observer lors de l'expérimentation :</p>
+
+                    <div class="metrics-checkbox-grid">
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="keygen" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">🔑 Temps KeyGen</span>
+                                <span class="mcb-desc">Génération des paires de clés (publique / privée / galois)</span>
+                            </div>
+                        </label>
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="enc_time" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">🔒 Temps de Chiffrement</span>
+                                <span class="mcb-desc">Chiffrement local des données financières (total et unitaire)</span>
+                            </div>
+                        </label>
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="cloud_time" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">⚙️ Temps Calcul Cloud</span>
+                                <span class="mcb-desc">Durée du traitement homomorphe direct sur le serveur Cloud</span>
+                            </div>
+                        </label>
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="dec_time" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">🔓 Temps Déchiffrement</span>
+                                <span class="mcb-desc">Déchiffrement côté client pour extraction du résultat final</span>
+                            </div>
+                        </label>
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="net_time" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">🌐 Latence Réseau HTTP</span>
+                                <span class="mcb-desc">Aller-retour REST Client &harr; AWS EC2 (Round-Trip Time)</span>
+                            </div>
+                        </label>
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="ram_peak" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">💾 Pic Mémoire RAM Cloud</span>
+                                <span class="mcb-desc">Empreinte mémoire pic tracée par tracemalloc sur le Cloud</span>
+                            </div>
+                        </label>
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="cpu_percent" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">⚡ Charge CPU Serveur</span>
+                                <span class="mcb-desc">Utilisation processeur et temps CPU de calcul homomorphe</span>
+                            </div>
+                        </label>
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="ciphertext_size" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">📦 Taille Ciphertext &amp; Expansion</span>
+                                <span class="mcb-desc">Volume en Ko et facteur d'expansion par rapport au clair</span>
+                            </div>
+                        </label>
+                        <label class="metric-checkbox-card">
+                            <input type="checkbox" name="metric_choice" value="accuracy" checked>
+                            <div class="mcb-body">
+                                <span class="mcb-title">🎯 Exactitude Mathématique</span>
+                                <span class="mcb-desc">Vérification de l'absence de bruit et conformité vs calcul en clair</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="action-footer" style="margin-top: 24px;">
+                    <button class="btn btn-secondary" id="btnBackToStep1">&larr; Retour aux Données</button>
+                    <button class="btn btn-primary btn-lg" id="btnStartEncryption">
+                        🚀 Lancer l'Expérimentation Homomorphe &rarr;
                     </button>
                 </div>
             </div>
@@ -231,78 +424,137 @@
         <section class="card step-section hidden" id="section4">
             <div class="card-header flex-between">
                 <div>
-                    <h2>Étape 4 : Résultats des Calculs &amp; Métriques de Performance</h2>
-                    <p>Résultats déchiffrés, décisions financières et évaluation des performances cryptographiques sur AWS Cloud.</p>
+                    <h2>Étape 4 : Résultats des Calculs &amp; Métriques Évaluées</h2>
+                    <p>Synthèse statistique des répétitions, métriques sélectionnées et vérification mathématique d'exactitude.</p>
                 </div>
-                <div style="display: flex; gap: 10px;">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button class="btn btn-outline" id="btnExportCSV">📥 Exporter CSV</button>
+                    <button class="btn btn-outline" id="btnExportJSON">📥 Exporter JSON</button>
                     <button class="btn btn-outline" id="btnRestart">🔄 Nouvelle Expérience</button>
                     <button class="btn btn-primary" id="btnGoToStep5">🔐 Comparatif Sécurité (Étape 5) &rarr;</button>
                 </div>
             </div>
             <div class="card-body">
 
-                <!-- KPI Cryptographic & Network Cards -->
-                <h3 style="font-size: 14px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px;">📊 Métriques Cryptographiques &amp; Réseau (Client Local &harr; AWS)</h3>
-                <div class="kpi-grid">
-                    <div class="kpi-card">
-                        <div class="kpi-label">Temps de Chiffrement</div>
-                        <div class="kpi-value" id="kpiEncTime">0.00 ms</div>
-                        <div class="kpi-sub">Local Client</div>
+                <!-- Experiment Configuration Summary Tags -->
+                <div class="experiment-recap-bar" id="experimentRecapBar" style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; padding: 12px 16px; background: rgba(37, 99, 235, 0.05); border-radius: 8px; border: 1px solid var(--border-color); font-size: 13px;">
+                    <span class="badge badge-info" id="recapScheme">Schéma : Paillier</span>
+                    <span class="badge badge-info" id="recapOperation">Opération : Somme</span>
+                    <span class="badge badge-info" id="recapTransactions">Échelle : N = 50 tx</span>
+                    <span class="badge badge-info" id="recapRepetitions">Répétitions : 3</span>
+                    <span class="badge badge-success" id="recapAccuracy">Exactitude : 100% Conforme</span>
+                </div>
+
+                <!-- Multi-Repetition Statistical Summary Table (Visible if repetitions > 1) -->
+                <div class="stats-summary-card hidden" id="statsSummaryContainer" style="margin-bottom: 24px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <h3 style="font-size: 15px; font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+                            <span>📈 Synthèse Statistique Multi-Répétitions (<span id="statsRepCount">3</span> mesures)</span>
+                        </h3>
+                        <span class="badge badge-info">Lissage Statistique &sigma;</span>
                     </div>
-                    <div class="kpi-card">
-                        <div class="kpi-label">Latence Réseau HTTP</div>
-                        <div class="kpi-value" id="kpiNetTime">0.00 ms</div>
-                        <div class="kpi-sub">Aller-Retour AWS EC2</div>
-                    </div>
-                    <div class="kpi-card">
-                        <div class="kpi-label">Temps Calcul Cloud</div>
-                        <div class="kpi-value" id="kpiCloudTime">0.00 ms</div>
-                        <div class="kpi-sub">Exécution Homomorphe</div>
-                    </div>
-                    <div class="kpi-card">
-                        <div class="kpi-label">Taille Payload Chiffré</div>
-                        <div class="kpi-value" id="kpiPayloadSize">0 Ko</div>
-                        <div class="kpi-sub" id="kpiExpansionRatio">Expansion : 0x</div>
+                    <div class="table-responsive">
+                        <table class="data-table" id="statsSummaryTable">
+                            <thead>
+                                <tr>
+                                    <th>Métrique Évaluée</th>
+                                    <th>Moyenne (&mu;)</th>
+                                    <th>Écart-Type (&sigma;)</th>
+                                    <th>Min</th>
+                                    <th>Max</th>
+                                    <th>Unité</th>
+                                </tr>
+                            </thead>
+                            <tbody id="statsSummaryBody"></tbody>
+                        </table>
                     </div>
                 </div>
 
-                <!-- Cloud Hardware Resource Consumption Cards -->
-                <h3 style="font-size: 14px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px; margin-top: 20px;">☁️ Consommation Réelle des Ressources Cloud AWS (Profilage Instance EC2)</h3>
-                <div class="kpi-grid">
-                    <div class="kpi-card" style="border-left: 4px solid #10b981;">
-                        <div class="kpi-label">Pic Mémoire RAM Cloud</div>
+                <!-- Dynamic KPI Cards Display (Reflecting checked metrics) -->
+                <h3 style="font-size: 14px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px;">
+                    📊 Métriques Mesurées lors de l'Expérimentation
+                </h3>
+                <div class="kpi-grid" id="dynamicKpiGrid">
+                    <!-- KeyGen Card -->
+                    <div class="kpi-card" id="kpiCardKeygen">
+                        <div class="kpi-label">🔑 Temps KeyGen</div>
+                        <div class="kpi-value" id="kpiKeygenTime">0.00 ms</div>
+                        <div class="kpi-sub" id="kpiKeygenSub">Génération des Clés</div>
+                    </div>
+
+                    <!-- Encryption Card -->
+                    <div class="kpi-card" id="kpiCardEnc">
+                        <div class="kpi-label">🔒 Temps Chiffrement</div>
+                        <div class="kpi-value" id="kpiEncTime">0.00 ms</div>
+                        <div class="kpi-sub" id="kpiEncSub">Local Client</div>
+                    </div>
+
+                    <!-- Cloud Computation Card -->
+                    <div class="kpi-card" id="kpiCardCloud">
+                        <div class="kpi-label">⚙️ Calcul Homomorphe Cloud</div>
+                        <div class="kpi-value" id="kpiCloudTime">0.00 ms</div>
+                        <div class="kpi-sub" id="kpiCloudSub">Serveur AWS EC2</div>
+                    </div>
+
+                    <!-- Decryption Card -->
+                    <div class="kpi-card" id="kpiCardDec">
+                        <div class="kpi-label">🔓 Temps Déchiffrement</div>
+                        <div class="kpi-value" id="kpiDecTime">0.00 ms</div>
+                        <div class="kpi-sub" id="kpiDecSub">Local Client</div>
+                    </div>
+
+                    <!-- Network Latency Card -->
+                    <div class="kpi-card" id="kpiCardNet">
+                        <div class="kpi-label">🌐 Latence Réseau HTTP</div>
+                        <div class="kpi-value" id="kpiNetTime">0.00 ms</div>
+                        <div class="kpi-sub" id="kpiNetSub">Round-Trip RTT</div>
+                    </div>
+
+                    <!-- RAM Peak Card -->
+                    <div class="kpi-card" id="kpiCardRam" style="border-left: 4px solid #10b981;">
+                        <div class="kpi-label">💾 Pic Mémoire RAM Cloud</div>
                         <div class="kpi-value" id="kpiCloudRamPeak">0.00 Ko</div>
                         <div class="kpi-sub" id="kpiCloudRamPeakMo">tracemalloc : 0.00 Mo</div>
                     </div>
-                    <div class="kpi-card" style="border-left: 4px solid #3b82f6;">
-                        <div class="kpi-label">Temps CPU Processeur</div>
-                        <div class="kpi-value" id="kpiCloudCpuTime">0.00 ms</div>
-                        <div class="kpi-sub" id="kpiCloudCpuLoad">Charge CPU : --%</div>
+
+                    <!-- CPU Load Card -->
+                    <div class="kpi-card" id="kpiCardCpu" style="border-left: 4px solid #3b82f6;">
+                        <div class="kpi-label">⚡ Charge CPU Serveur</div>
+                        <div class="kpi-value" id="kpiCloudCpuLoad">--%</div>
+                        <div class="kpi-sub" id="kpiCloudCpuTime">Temps CPU : 0.00 ms</div>
                     </div>
-                    <div class="kpi-card" style="border-left: 4px solid #8b5cf6;">
-                        <div class="kpi-label">RAM Processus Serveur</div>
-                        <div class="kpi-value" id="kpiCloudProcessRam">0.00 Mo</div>
-                        <div class="kpi-sub">Empreinte RSS Python</div>
+
+                    <!-- Ciphertext Size Card -->
+                    <div class="kpi-card" id="kpiCardSize" style="border-left: 4px solid #f59e0b;">
+                        <div class="kpi-label">📦 Taille Ciphertext &amp; Expansion</div>
+                        <div class="kpi-value" id="kpiPayloadSize">0 Ko</div>
+                        <div class="kpi-sub" id="kpiExpansionRatio">Expansion : 0x</div>
                     </div>
-                    <div class="kpi-card" style="border-left: 4px solid #f59e0b;">
-                        <div class="kpi-label">RAM Système Globale EC2</div>
-                        <div class="kpi-value" id="kpiCloudSystemRam">0 / 0 Mo</div>
-                        <div class="kpi-sub" id="kpiCloudSystemRamPct">Utilisation : 0%</div>
+
+                    <!-- Accuracy Card -->
+                    <div class="kpi-card" id="kpiCardAccuracy" style="border-left: 4px solid #8b5cf6;">
+                        <div class="kpi-label">🎯 Exactitude Mathématique</div>
+                        <div class="kpi-value" id="kpiAccuracyVal">100.0%</div>
+                        <div class="kpi-sub" id="kpiAccuracySub">0 bruit modulaire</div>
                     </div>
                 </div>
 
                 <!-- Results Table -->
-                <div class="results-container">
-                    <h3>Tableau des Résultats Financiers Déchiffrés</h3>
+                <div class="results-container" style="margin-top: 28px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <h3>Tableau des Résultats Financiers Déchiffrés (Échantillon représentatif)</h3>
+                        <span class="badge badge-success" id="tableAccuracyBadge">✓ Conforme à 100% avec le calcul en clair</span>
+                    </div>
                     <div class="table-responsive">
                         <table class="data-table" id="resultsTable">
                             <thead>
                                 <tr>
-                                    <th>Identifiant Client</th>
-                                    <th>Valeurs en Clair (Entrée)</th>
-                                    <th>Résultat Homomorphe (Déchiffré)</th>
-                                    <th>Résultat en Clair (Référence)</th>
-                                    <th>Décision / Statut</th>
+                                    <th>Identifiant Entité</th>
+                                    <th>Données en Clair (Entrée)</th>
+                                    <th>Traitement Chiffré Cloud</th>
+                                    <th>Résultat Déchiffré</th>
+                                    <th>Référence en Clair</th>
+                                    <th>Décision / Statut Métier</th>
                                     <th>Exactitude</th>
                                 </tr>
                             </thead>
