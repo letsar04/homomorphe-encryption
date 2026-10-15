@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnLoadMicrocredit = document.getElementById("btnLoadMicrocredit");
     const btnLoadAgios = document.getElementById("btnLoadAgios");
     const btnLoadTransactions = document.getElementById("btnLoadTransactions");
+    const btnLoadTransactions10k = document.getElementById("btnLoadTransactions10k");
 
     // Synthetic Data Generator Elements
     const genDataType = document.getElementById("genDataType");
@@ -229,7 +230,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 selectOperation.dispatchEvent(new Event('change'));
 
                 // Synchroniser l'échelle de test dans l'étape 2
-                expNbTransactions.value = Math.min(nb, 100);
+                expNbTransactions.value = nb;
+                syncExpChips(nb);
             } else {
                 throw new Error("Erreur de génération distante");
             }
@@ -241,6 +243,17 @@ document.addEventListener("DOMContentLoaded", () => {
             btnGenererDonnees.textContent = "✨ Générer le Jeu de Données Personnalisé";
         }
     });
+
+    function syncExpChips(val) {
+        if (!expChips) return;
+        expChips.forEach(chip => {
+            if (parseInt(chip.dataset.val) === parseInt(val)) {
+                chip.classList.add("active");
+            } else {
+                chip.classList.remove("active");
+            }
+        });
+    }
 
     function genererDonneesLocal(type, nb, minVal, maxVal, ratioCredit, seed) {
         if (type === "microcredit") {
@@ -256,6 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnLoadMicrocredit.addEventListener("click", () => loadPresetMicrocredit(50));
     btnLoadAgios.addEventListener("click", () => loadPresetAgios(20));
     btnLoadTransactions.addEventListener("click", () => loadPresetTransactions(100));
+    if (btnLoadTransactions10k) btnLoadTransactions10k.addEventListener("click", () => loadPresetTransactions(10000));
 
     function loadPresetMicrocredit(count = 50) {
         const headers = ["Client_ID", "Volume_Transactions (FCFA)", "Regularite", "Retards"];
@@ -269,6 +283,8 @@ document.addEventListener("DOMContentLoaded", () => {
         loadedData = { type: "microcredit", headers, rows, total_count: count };
         selectOperation.value = "microcredit";
         selectOperation.dispatchEvent(new Event('change'));
+        expNbTransactions.value = count;
+        syncExpChips(count);
         renderTable(headers, rows.slice(0, 20), count, "📊 Presets de profils clients Mobile Money chargés pour l'évaluation de solvabilité.");
     }
 
@@ -282,6 +298,8 @@ document.addEventListener("DOMContentLoaded", () => {
         loadedData = { type: "agios", headers, rows, total_count: count };
         selectOperation.value = "agios";
         selectOperation.dispatchEvent(new Event('change'));
+        expNbTransactions.value = count;
+        syncExpChips(count);
         renderTable(headers, rows.slice(0, 20), count, "📊 Soldes de comptes bancaires sur 30 jours (Taux d'usure BCEAO : 5.00%).");
     }
 
@@ -308,7 +326,9 @@ document.addEventListener("DOMContentLoaded", () => {
         loadedData = { type: "transactions", headers, rows, total_count: count };
         selectOperation.value = "somme";
         selectOperation.dispatchEvent(new Event('change'));
-        renderTable(headers, rows.slice(0, 20), count, `📊 Somme nette des flux : <strong>${sommeTot.toLocaleString('fr-FR')} FCFA</strong>.`);
+        expNbTransactions.value = count;
+        syncExpChips(count);
+        renderTable(headers, rows.slice(0, 20), count, `📊 Somme nette des flux (${count.toLocaleString('fr-FR')} transactions) : <strong>${sommeTot.toLocaleString('fr-FR')} FCFA</strong>.`);
     }
 
     // --- File Drag & Drop ---

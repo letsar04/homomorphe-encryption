@@ -108,6 +108,9 @@
                                 <button class="btn btn-outline" id="btnLoadTransactions">
                                     💳 100 Transactions Synthétiques (FCFA)
                                 </button>
+                                <button class="btn btn-outline" id="btnLoadTransactions10k" style="border-color: #2563eb; color: #2563eb; font-weight: 600;">
+                                    🔥 10 000 Transactions (Jeu Complet Chapitre III)
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -117,7 +120,7 @@
                         <div class="generator-header">
                             <div class="gen-badge">NOUVEAU</div>
                             <h3>⚙️ Générateur Synthétique Paramétrable</h3>
-                            <p>Configurez la volumétrie et les bornes financières pour générer un jeu de données conforme au Chapitre III.</p>
+                            <p>Configurez la volumétrie et les bornes financières pour générer un jeu de données conforme au Chapitre III (jusqu'à 10 000 transactions).</p>
                         </div>
 
                         <div class="form-group" style="margin-top: 12px;">
@@ -132,13 +135,15 @@
                         <div class="grid-2col" style="gap: 12px; margin-top: 10px;">
                             <div class="form-group">
                                 <label class="form-label">Quantité de Lignes (N) :</label>
-                                <input type="number" id="genNbRows" class="form-input" min="5" max="10000" value="100">
+                                <input type="number" id="genNbRows" class="form-input" min="5" max="20000" value="100">
                                 <div class="quick-chips" style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap;">
                                     <button type="button" class="chip-btn" data-n="10">10</button>
                                     <button type="button" class="chip-btn" data-n="50">50</button>
                                     <button type="button" class="chip-btn active" data-n="100">100</button>
                                     <button type="button" class="chip-btn" data-n="500">500</button>
                                     <button type="button" class="chip-btn" data-n="1000">1 000</button>
+                                    <button type="button" class="chip-btn" data-n="5000">5 000</button>
+                                    <button type="button" class="chip-btn" data-n="10000">10 000</button>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -263,17 +268,20 @@
                     <div class="grid-2col">
                         <div class="form-group">
                             <label class="form-label">Quantité de Données pour le Test (N transactions) :</label>
-                            <div style="display: flex; gap: 8px; align-items: center;">
-                                <input type="number" id="expNbTransactions" class="form-input" min="5" max="10000" value="50" style="max-width: 150px;">
-                                <div class="quick-chips" style="display: flex; gap: 6px;">
+                            <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                                <input type="number" id="expNbTransactions" class="form-input" min="5" max="20000" value="50" style="max-width: 150px;">
+                                <div class="quick-chips" style="display: flex; gap: 6px; flex-wrap: wrap;">
                                     <button type="button" class="chip-exp-btn" data-val="10">10</button>
                                     <button type="button" class="chip-exp-btn active" data-val="50">50</button>
                                     <button type="button" class="chip-exp-btn" data-val="100">100</button>
                                     <button type="button" class="chip-exp-btn" data-val="500">500</button>
                                     <button type="button" class="chip-exp-btn" data-val="1000">1 000</button>
+                                    <button type="button" class="chip-exp-btn" data-val="2000">2 000</button>
+                                    <button type="button" class="chip-exp-btn" data-val="5000">5 000</button>
+                                    <button type="button" class="chip-exp-btn" data-val="10000">10 000</button>
                                 </div>
                             </div>
-                            <small style="color: var(--text-secondary); font-size: 11px; margin-top: 4px; display: block;">Échelle de test sous laquelle les opérations chiffrées seront traitées.</small>
+                            <small style="color: var(--text-secondary); font-size: 11px; margin-top: 4px; display: block;">Échelle de test sous laquelle les opérations chiffrées seront traitées (jusqu'à 10 000 transactions conformes au Chapitre III).</small>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Nombre de Répétitions (Lissage statistique du bruit) :</label>
@@ -632,6 +640,10 @@
                                 <option value="20">20 (Rapide)</option>
                                 <option value="50" selected>50 (Standard)</option>
                                 <option value="100">100 (Étendu)</option>
+                                <option value="500">500 (Volumineux)</option>
+                                <option value="1000">1 000 (Grand volume)</option>
+                                <option value="5000">5 000 (Très grand volume)</option>
+                                <option value="10000">10 000 (Palier Max Chapitre III)</option>
                             </select>
                         </div>
                         <div class="form-group">
